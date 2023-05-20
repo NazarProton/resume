@@ -1,232 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Протон Назар, Proton Nazar js dev.</title>
-  <link rel="icon" href="./img/icon.png" />
-  <link rel="stylesheet" href="css/font-awesome.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+  <link href="output.css" rel="stylesheet" />
+  <title>Proton Nazar js dev</title>
+  <link rel="icon" href="./img//protonLogo.svg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
-<body>
-  <!--Main conteiner-->
-  <div id="main" class="Main-conteiner">
-    <aside class="sidebar">
-      <img class="my-photo" src="./img/my photoo.jpg" alt="My photo" />
-
-      <!--Contacts-->
-      <div id="contacts" class="Contacts-conteiner">
-        <h3 class="Contacts-title">Contacts</h3>
-
-        <div class="Contacts-letters">
-          <ul>
-            <li class="phone"><i class="fa fa-phone"></i> </span>
-              <a class="Contacts-link" href="tel:+380934862999">+380934862999</a>
-            </li>
-            <li class="email"><i class="fa fa-envelope"></i></span>
-              <a class="Contacts-link" href="mailto:nproton2012@gmail.com">nproton2012@gmail.com</a>
-            </Li>
-          </ul>
+<body class="p-0 m-0 w-full h-full flex justify-center font-play text-white">
+  <div class="flex my-10 w-11/12 max-w-[64rem] pc650:flex-row flex-col shadow-2xl">
+    <div class="pc650:w-4/12  w-full bg-whiteInherit flex flex-col items-center">
+      <img class="pc650:rounded-full pc650:mt-10 pc650:ml-5" src="./img/myPhoto.jpg" />
+      <div class="w-10/12">
+        <div class="pc650:hidden flex flex-col mt-5">
+          <p class="">Front-End Developer</p>
+          <p class="text-4xl">Proton Nazar</p>
+          <p class="text-lg">26 years, Lviv, Ukraine</p>
         </div>
-        <!--Contacts Social-->
-        <div class="Contacts-social">
-          <ul>
-            <li class="github">
-              <a href="https://github.com/NazarProton"><i class="fa fa-github"></i></a>
-          </li>
-             <li class="linkedin">
-              <a href="https://www.linkedin.com/in/nazarproton/"><i class="fa fa-linkedin"></i></a>
-            </li>
-            <li class="telegram">
-              <a href="https://t.me/proton_n"><i class="fab fa-telegram"></i></a>
-            </li>
-            <li class="instagram">
-              <a href="https://www.instagram.com/proton_n/"><i class="fa fa-instagram"></i></a>
-            </li>
-          </ul>
+        <div class="w-full flex justify-center gap-2 flex-col">
+          <h3 class="text-orange-500 text-lg">Contacts:</h3>
+          <a class="text-white hover:text-green flex gap-2" href="tel:+380934862999">
+            <i class="bi bi-telephone-fill"></i>
+            +380934862999
+          </a>
+          <a class="text-white hover:text-green flex gap-2" href="mailto:nproton2012@gmail.com">
+            <i class="bi bi-envelope"></i>
+            nproton2012@gmail.com
+          </a>
+        </div>
+      </div>
+      <div class="w-10/12">
+        <div class="mt-5 w-full flex justify-between gap-2">
+          <a class="text-white hover:text-green flex gap-2" href="https://t.me/proton_n">
+            <i class="bi text-3xl bi-telegram"></i>
+          </a>
+          <a class="text-white hover:text-green flex gap-2" href="https://www.linkedin.com/in/nazarproton/">
+            <i class="bi text-3xl bi-linkedin"></i>
+          </a>
+          <a class="text-white hover:text-green flex gap-2" href="https://www.instagram.com/proton_n/">
+            <i class="bi text-3xl bi-instagram"></i>
+          </a>
+          <a class="text-white hover:text-green flex gap-2" href="https://github.com/NazarProton">
+            <i class="bi text-3xl bi-github"></i>
+          </a>
         </div>
 
+        <p class="mt-10 pc650:hidden flex">
+          👋Hello, I am a FrontEnd developer,<br /> I am actively looking for a job<br /> I have more than 1 year work
+          experience,<br /> I always continue to learn and develop my skills.<br />I easily learn new
+          things and find a common language with the team,<br /> so I hope to add to
+          the team that is interested in a good dedicated employee.
+        </p>
 
-        <!--Tech Skills-->
-        <div class="Tech-Skills-conteiner">
-          <h3 class="Tech-Skills-title">Tech Skills</h3>
+        <div class="mt-5">
+          <h3 class="text-orange-500">Tech Skills:</h3>
           <div>
             <ul>
               <li class="Tech-Skills-item">
-                <span class="Tech-Skills-text"> HTML/CSS, SASS(SCSS), ​BEM </span>
+                <p class="Tech-Skills-text"> HTML, JavaScript (ES6+), TypeScript, CSS, CSS-Animations, SASS(SCSS), BEM,
+                  CSS, Next.js, Chart.js, Tailwind, PostCSS, Headlessui, Bootstrap 5,
+                  React-Strap, React-Bootstrap, AntDesign, JSON, jQuery, AJAX, Axios, React.js, React-Router-Dom,
+                  Redux-Saga,Redux-thunk, Node.js, Webpack,
+                  HTTP, REST API, OOP, Canvas, Firebase, Metamask.js, Ethers.js, React-Countdown, React-Fast-Marquee,
+                  React-Toastify, React-Select, React-Swipeable, Nanoid</p>
               </li>
-              <li class="Tech-Skills-item">
-                <span class="Tech-Skills-text"> CSS, SCSS, SASS,​ Bootstrap 5,React-strap,React-bootstrap AntDesign,</span>
-              </li>
-              <li class="Tech-Skills-item">
-                <span class="Tech-Skills-text"> JavaScript (ES6+) </span>
-              </li>
-              <li class="Tech-Skills-item">
-                <span class="Tech-Skills-text"> JSON​, jQuery, AJAX, Axios </span>
-              </li>
-              <li class="Tech-Skills-item">
-                <span class="Tech-Skills-text"> React.js </span>
-              </li>
-              <li class="Tech-Skills-item">
-                <span class="Tech-Skills-text"> Redux-Saga,Redux-thunk </span>
-              </li>
-              <li class="Tech-Skills-item">
-                <span class="Tech-Skills-text"> Node.js, Webpack</span>
-              </li>
-              <li class="Tech-Skills-item">
-                <span class="Tech-Skills-text"> HTTP, REST API </span>
-              </li>
-              <li class="Tech-Skills-item">
-                <span class="Tech-Skills-text"> OOP, Canvas </span>
-              </li>
-              <li class="Tech-Skills-item">
-                <span class="Tech-Skills-text"> Firebase </span>
-              </li>
-
             </ul>
           </div>
         </div>
 
-        <!--Soft Skills-->
-        <div class="Soft-Skills-conteiner">
-          <h3 class="Soft-Skills-title">Soft Skills</h3>
-          <div>
-            <ul>
-              <li class="Soft-Skills-item">
-                <span class="Soft-Skills-text"> Scrum </span>
-              </li>
-              <li class="Soft-Skills-item">
-                <span class="Soft-Skills-text"> Agile </span>
-              </li>
-              <li class="Soft-Skills-item">
-                <span class="Soft-Skills-text"> GTD </span>
-              </li>
-              <li class="Soft-Skills-item">
-                <span class="Soft-Skills-text"> Teamwork </span>
-              </li>
-            </ul>
+        <div class="mt-5">
+          <h3 class="text-orange-500">Soft Skills:</h3>
+          <div class="flex flex-col gap-1">
+            <span>GTD</span>
+            <span>Teamwork</span>
+            <span>Communication</span>
+            <span>Problem-solving</span>
+            <span>Time management</span>
+            <span>Critical thinking</span>
+            <span>Decision-making</span>
+            <span>Creativity</span>
+            <span>Adaptability</span>
+            <span>Resourcefulness</span>
+            <span>Openness to criticism</span>
           </div>
         </div>
-    </aside>
-
-    <!--About me conteiner-->
-    <div id="about" class="About-me-conteiner">
-      <!--About me main info.-->
-      <div class="Info-conteiner">
-        <h2 class="Profession">Front-End Developer</h2>
-        <h1 class="Name">Proton Nazar</h1>
-        <div class="Info-conteiner-text">
-          <p>Experience with
-            <i class="java-script"><img src="./img/javascript.png" alt="framework_pic"></i> JavaScript,
-            <i class="react"><img src="./img/react-2.png" alt="framework_pic"></i>React.js,
-            <i class="node"><img  src="./img/redux-saga.png" alt="framework_pic"></i>Redux-Saga,
-            <i class="node"><img src="./img/nodejs.png" alt="framework_pic"></i>Node.js;
-          </p>
-          <p>Deep level of knowledge of HTML, CSS, SCSS;</p>
-          <p>Ability to support third-party code;</p>
-          <p>Strong communication skills;</p>
-          <p>English level intermediate</p>
-          <p>Tools:Visual Studio Code;</p>
-        </div>
-      </div>
-
-      <!--Projects conteiner-->
-      <div id="projects" class="Projects-conteiner">
-        <h3 class="About-me-title">Projects</h3>
-        <ol>
-          <li class="Projects-item">
-            <a class="Projects-link" href="https://github.com/NazarProton">https://github.com/NazarProton</a>
-            <!--<spam class="dots">
-              .....................</spam>-->
-            <spam class="tech-name"><b>[</b> JS,TS, React,Redux-Saga,Redux-Thunk, Node.js, HTML/CSS, SCSS<b>]</b></spam>
-          </li>
-        </ol>
-      </div>
-        <!--Education-->
-        <div class="Education-conteiner">
-          <h3 class="About-me-title">Education</h3>
-          <!--Education phd-->
-          <div>
-            <h4 class="Education-title">
-              International Training Center for IT Specialists "Skillup"
-            </h4>            <h4 class="Education-title">
-              Vladilen Minin "Junior Front-End Dev"
-            </h4>            <h4 class="Education-title">
-              SoftServe "React-marathon"
-            </h4>
-            <h5 class="Education-time">
-              March,2021-February 2022 <span class="Profession-divider">|</span> Kyiv, Ukraine
-            </h5>
-            <spam class="Education-specialization">
-              <i class="java-script"></i>JavaScript developer course.
-              Depth study:
-              <i class="react"><img src="./img/react-2.png" alt="framework_pic"></i>React.js,
-              <i class="react"><img src="./img/redux-saga.png" alt="framework_pic"></i>Redux-Saga,
-              <i class="node"><img src="./img/nodejs.png" alt="framework_pic"></i>Node.js .</spam>
-          </div>
-          <div class="Education-conteiner">
-          <h3 class="About-me-title">Work experience in it:</h3>
-          <!--Education phd-->
-          <div>
-            <h4 class="Education-title">
-              "Ficus Technologies" "Full-stack Developer React.js Node.js"
-            </h4>
-            <h5 class="Education-time">
-              April,2022-October 2022 <span class="Profession-divider">|</span> Zaporizhia, Ukraine<span class="Profession-divider">|</span>outstaff
-            </h5>
-          </div>
-
-          <!--Self Education -->
-          <div>
-            <h4 class="Education-title">
-              Self-study
-            </h4>
-            <h5 class="Education-time">
-              2019-2020 <span class="Profession-divider">|</span> Online
-            </h5>
-            <class class="Education-specialization">One+ year software development as trainings, online courses and
-              self-study <br>developing web pages (HTML 5 + CSS 3 + FLEX BOX + Media Queries)
-            </spam>
-          </div>
-
-          <!--Education phd-->
-          <div>
-            <h4 class="Education-title">
-              •	Lviv Cooperative College of Economics and Law
-            </h4>
-            <spam class="Education-specialization">(Faculty of Law)</spam>
-            <h5 class="Education-time">
-              2011-2015 <span class="Profession-divider">|</span> Lviv, Ukraine
-            </h5>
-          </div>
-          <div>
-            <h4 class="Education-title">
-              •	Lviv University of Trade and Economics
-            </h4>
-            <spam class="Education-specialization">(Faculty of Law).</spam>
-            <h5 class="Education-time">
-              2015-2019 <span class="Profession-divider">|</span> Lviv, Ukraine
-            </h5>
-          </div>
       </div>
     </div>
-    <!--Start animated_bg-->
-    <div id="particles-js"></div>
-    <script src="animated_bg/particles.min.js"></script>
-    <script src="animated_bg/app.js"></script>
-    <script>/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-      /*  particlesJS.load('particles-js', 'animated_bg/assets/particles.json', function () {
-         console.log('callback - particles.js config loaded');
-       });*/</script>
-    <!--Finish animated_bg-->
-  </div>
+    <div class="pc650:w-8/12 w-full flex justify-center bg-whiteInherit">
+      <div class="w-10/12 flex flex-col mt-10 ">
+        <div class="pc650:flex hidden flex-col">
+          <p class="">Front-End Developer</p>
+          <p class="text-4xl">Proton Nazar</p>
+          <p class="text-lg">26 years, Lviv, Ukraine</p>
+          <p class="mt-10">
+            👋Hello, I am a FrontEnd developer,<br /> I am actively looking for a job<br /> I have more than 1 year work
+            experience,<br /> I always continue to learn and develop my skills.<br />I easily learn new
+            things and find a common language with the team,<br /> so I hope to add to
+            the team that is interested in a good dedicated employee.
+          </p>
+        </div>
+        <div class="flex flex-col gap-2 mt-5">
+          <div class="flex flex-col gap-2">
+            <p class="w-fit text-orange-500">
+              I have work experience and excellent knowledge with:
+            </p>
+            <div class="w-full flex flex-wrap gap-2">
+              <p class="flex gap-1">
+                <img class="w-6 h-6" src="./img/html.png" alt="framework_pic" />HTML,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-6 h-6" src="./img/css.png" alt="framework_pic" />CSS,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-6 h-6" src="./img/js.png" alt="framework_pic" />JavaScript,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-6 h-6" src="./img/ts.png" alt="framework_pic" />TypeScript,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-6 h-6" src="./img/sass.png" alt="framework_pic" />SCSS-SASS,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-6 h-6" src="./img/react.png" alt="framework_pic" />React.js, React-Hooks,
+                React-Router-Dom,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-6 h-6" src="./img/redux.png" alt="framework_pic" />Redux, Redux-Saga, Redux-Thunk,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-6 h-6" src="./img/axios.png" alt="framework_pic" />Axios,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-6 h-6" src="./img/swagger.png" alt="framework_pic" />Swagger,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-6 h-6" src="./img/firebase.png" alt="framework_pic" />Firebase,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-6 h-6" src="./img/next.png" alt="framework_pic" />Next.js,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-6 h-6" src="./img/tailwind.png" alt="framework_pic" />Tailwind,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-6 h-5 mt-0.5" src="./img/bootstrap.png" alt="framework_pic" />Bootstrap,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-6 h-6" src="./img/antDesign.png" alt="framework_pic" />AntDesign,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-6 h-6" src="./img/headless.png" alt="framework_pic" />HeadlessUI,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-5 h-5" src="./img/reactBootstrap.png" alt="framework_pic" />React-Bootstrap,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-6 h-6" src="./img/chartjs.png" alt="framework_pic" />Chart.js,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-6 h-6" src="./img/MetaMask.png" alt="framework_pic" />MetaMask.js,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-6 h-6" src="./img/ethersjs.png" alt="framework_pic" />Ethers.js,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-6 h-6" src="./img/github.png" alt="framework_pic" />GitHub,
+              </p>
+              <p class="flex gap-1">
+                <img class="w-6 h-6" src="./img/gitlab.png" alt="framework_pic" />GitLab
+            </div>
+          </div>
+          <p>Ability to support third-party code✅</p>
+          <p>Strong communication skills✅</p>
+          <p>English level: intermediate✅</p>
+          <div class="flex gap-2 pc360:flex-row flex-col">
+            <h3 class="About-me-title">All my projects live here:</h3>
+            <a class="text-green" href="https://github.com/NazarProton">my GitHub</a>
+          </div>
+          <div class="flex flex-col">
+            <h3 class="mt-5 text-orange-500">Education:</h3>
+            <div class="mt-3">
+              <div class="mt-1 flex pc830:flex-row flex-col pc830:gap-2">
+                <p>1&rpar;International Training Center for IT Specialists</p>
+                <p class="text-green">"Skillup"</p>
+              </div>
+              <div class="flex pc395:gap-2 pc395:flex-row flex-col">
+                <p>2&rpar;Vladilen Minin</p>
+                <p class="text-green">"Junior Front-End Dev"</p>
+              </div>
+              <div class="flex gap-2">
+                <p>3&rpar;SoftServe</p>
+                <p class="text-green">"React-marathon"</p>
+              </div>
+              <div class="">
+                JavaScript developer course.
+                <div class="flex gap-1">
+                  <p>Depth study:</p>
+                  <div class="flex pc360:flex-row flex-col gap-1">
+                    <p class="flex gap-1"><img class="w-5 h-5" src="./img/react.png" alt="framework_pic" />React.js,
+                    </p>
+                    <p class="flex gap-1"><img class="w-5 h-5" src="./img/redux.png" alt="framework_pic">Redux</p>
+                  </div>
+                </div>
+                <h5 class="opacity-80">
+                  March,2021-February 2022 <span class="text-green">|</span> Kyiv, Ukraine
+                </h5>
+              </div>
+              <div class="mt-3">
+                <p class="text-lg">
+                  Lviv Cooperative College of Economics and Law
+                </p>
+                <p class="text-sm">(Faculty of Law)</p>
+                <h5 class="opacity-80">
+                  2011-2015 <span class="text-green">|</span> Lviv, Ukraine
+                </h5>
+              </div>
+              <div class="mt-3">
+                <p class="text-lg">
+                  Lviv University of Trade and Economics
+                </p>
+                <p class="text-sm">(Faculty of Law).</p>
+                <h5 class="opacity-80">
+                  2015-2019 <span class="text-green">|</span> Lviv, Ukraine
+                </h5>
+              </div>
+
+              <div class="mt-10 mb-10">
+                <h3 class="text-orange-500">Work experience as Front-end Developer:</h3>
+                <div>
+                  <h4 class="text-green">
+                    "Ficus Technologies" "Front-End Developer"
+                  </h4>
+                  <h5 class="opacity-80">
+                    March 2022-June 2022 <span class="text-green"> | </span> Zaporizhia, Ukraine<span
+                      class="text-green">
+                      | </span>outstaff, remotely
+                  </h5>
+                </div>
+                <div>
+                  <h4 class="text-green">
+                    "Zoinks Hedge Crypto" "Front-End,Crypto Developer"
+                  </h4>
+                  <h5 class="opacity-80 gap-2">
+                    July 2022 - May 2023 <span class="text-green"> | </span>Canada<span class="text-green"> |
+                    </span>fulltime, remotely
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 
 </html>
