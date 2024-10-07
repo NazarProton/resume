@@ -1,12 +1,8 @@
 function App() {
   return (
-    <>
-      <div className="flex items-center justify-center min-h-screen bg-gray-100">
-        <h1 className="text-4xl font-bold text-blue-500">
-          Hello, Tailwind with Vite!
-        </h1>
-      </div>
-    </>
+    <main className="flex items-center justify-center min-h-screen w-screen bg-gray-100">
+      <h1 className="text-4xl font-bold text-blue-500">Nazar Proton</h1>
+    </main>
   );
 }
 
