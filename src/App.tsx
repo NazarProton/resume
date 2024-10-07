@@ -1,6 +1,7 @@
 import MyInfo from '../public/myInfo.json';
 import Description from './Description';
 import ProfileInfo from './ProfileInfo';
+import myPhoto from '../public/myPhoto.jpg';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <div className="pc700:w-[40%] w-full flex flex-col items-center">
           <img
             className="pc700:rounded-full object-cover pc700:mt-10 z-10 w-11/12 aspect-square"
-            src="./public/myPhoto.jpg"
+            src={myPhoto}
             alt="Profile"
           />
           <div className="w-10/12">
