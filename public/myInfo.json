@@ -4,92 +4,168 @@
     "title": "FullStack JavaScript Developer",
     "age": 28,
     "location": "Warsaw, Poland",
-    "contacts": {
-      "phone": "+48 573963998",
-      "email": "nproton2012@gmail.com",
-      "social": {
-        "telegram": "https://t.me/proton_n",
-        "linkedin": "https://www.linkedin.com/in/nazarproton/",
-        "instagram": "https://www.instagram.com/proton_n/",
-        "github": "https://github.com/NazarProton"
-      }
+    "description": "Hello, I am a FullStack Developer,",
+    "description2": "I am actively looking for a job.",
+    "description3": "I have over than 3 years work experience.",
+    "description4": "I always continue to learn and develop my skills.",
+    "description5": "I easily learn new things and find a common topics with the team."
+
+  },
+  "contacts": {
+    "phone": "+48 573963998",
+    "email": "nproton2012@gmail.com",
+    "socials": {
+      "telegram": "https://t.me/proton_n",
+      "linkedin": "https://www.linkedin.com/in/nazarproton/",
+      "instagram": "https://www.instagram.com/proton_n/",
+      "github": "https://github.com/NazarProton"
+    }
+  },
+  "languages": [
+    { "name": "Ukrainian", "level": "Native" },
+    { "name": "English", "level": "Upper-Intermediate" },
+    { "name": "Polish", "level": "Intermediate" }
+  ],
+  "techSkills": [
+    "HTML",
+    "CSS",
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "Node.js",
+    "React-Native",
+    "React.js",
+    "Next.js with SSR",
+    "React-Router-Dom",
+    "Express.js",
+    "Docker",
+    "Fp-ts",
+    "Effects",
+    "Vue.js",
+    "Nuxt.js",
+    "Pinia",
+    "Redux-Saga",
+    "Redux-thunk",
+    "Metamask.js",
+    "Ethers.js",
+    "Firebase",
+    "MongoDB",
+    "REST API",
+    "JSON",
+    "AJAX",
+    "SWR",
+    "Axios",
+    "jQuery",
+    "Webpack",
+    "OOP",
+    "SASS(SCSS)",
+    "PostCSS",
+    "CSS-Animations",
+    "Canvas",
+    "Tailwind",
+    "Quasar",
+    "Chart.js",
+    "Material.ui",
+    "AntDesign",
+    "Headless.ui",
+    "Bootstrap 5",
+    "React-Strap",
+    "React-Bootstrap",
+    "React-Fast-Marquee",
+    "React-Toastify",
+    "React-Select",
+    "React-Swipeable",
+    "React-spline",
+    "React-query",
+    "Tsparticles",
+    "Wallet-connect",
+    "Web3modal/wagmi",
+    "Bitcoin-address-validation",
+    "Bitcoinjs-lib",
+    "Keccak256",
+    "React-draggable",
+    "React-fast-marquee",
+    "Sats-connect",
+    "Swiper",
+    "Typewriter-effect",
+    "Uuid",
+    "Viem",
+    "Web3"
+  ],
+  "softSkills": [
+    "GTD",
+    "Teamwork",
+    "Communication",
+    "Problem-solving",
+    "Time management",
+    "Critical thinking",
+    "Decision-making",
+    "Creativity",
+    "Adaptability",
+    "Resourcefulness",
+    "Openness to criticism"
+  ],
+  "experience": [
+    {
+      "company": "Ordeez.io",
+      "position": "Front-End Developer React",
+      "description": "As the sole front-end developer, I independently developed the entire product for this NFT marketplace. The platform allows users to migrate NFTs from various networks to BTC, buy and sell them, view statistics, and analyze collections. I was responsible for all effects and styles and actively participated in the design development for this project.",
+      "dates": "02/2024 - Present",
+      "location": "Croatia, Remote"
     },
-    "languages": [
-      { "name": "Ukrainian", "level": "Native" },
-      { "name": "English", "level": "Upper-Intermediate" },
-      { "name": "Polish", "level": "Intermediate" }
-    ],
-    "techSkills": [
-      "HTML", "CSS", "JavaScript (ES6+)", "TypeScript", "Node.js", "React-Native",
-      "React.js", "Next.js with SSR", "React-Router-Dom", "Express.js", "Docker", "Fp-ts", "Effects",
-      "Vue.js", "Nuxt.js", "Pinia", "Redux-Saga", "Redux-thunk", "Metamask.js", "Ethers.js",
-      "Firebase", "MongoDB", "REST API", "JSON", "AJAX", "SWR", "Axios", "jQuery", "Webpack", "OOP",
-      "SASS(SCSS)", "PostCSS", "CSS-Animations", "Canvas", "Tailwind", "Quasar", "Chart.js", "Material.ui", 
-      "AntDesign", "Headless.ui", "Bootstrap 5", "React-Strap", "React-Bootstrap", "React-Fast-Marquee",
-      "React-Toastify", "React-Select", "React-Swipeable", "React-spline", "React-query", "Tsparticles",
-      "Wallet-connect", "Web3modal/wagmi", "Bitcoin-address-validation", "Bitcoinjs-lib", "Keccak256",
-      "React-draggable", "React-fast-marquee", "Sats-connect", "Swiper", "Typewriter-effect", "Uuid", 
-      "Viem", "Web3"
-    ],
-    "softSkills": [
-      "GTD", "Teamwork", "Communication", "Problem-solving", "Time management",
-      "Critical thinking", "Decision-making", "Creativity", "Adaptability", 
-      "Resourcefulness", "Openness to criticism"
-    ],
-    "experience": [
-      {
-        "company": "Ordeez.io",
-        "position": "Front-End Developer React",
-        "description": "As the sole front-end developer, I independently developed the entire product for this NFT marketplace. The platform allows users to migrate NFTs from various networks to BTC, buy and sell them, view statistics, and analyze collections. I was responsible for all effects and styles and actively participated in the design development for this project.",
-        "dates": "02/2024 - Present",
-        "location": "Croatia, Remote"
-      },
-      {
-        "company": "Capgemini (Evolv Technology)",
-        "position": "Front-End Developer React",
-        "description": "At Evolv Technology, a provider of AI-enabled touchless security screening systems, I contributed to the development of their advanced security solutions. Additionally, I worked on the development of their mobile application as a React Native developer, separate from the website.",
-        "dates": "03/2024 - 07/2024",
-        "location": "USA, Remote"
-      },
-      {
-        "company": "Capgemini (Oasis Pro Marketplace)",
-        "position": "Full Stack Developer React",
-        "description": "At Oasis Pro Marketplace, I served as a Full Stack Developer on a crypto project, contributing to the development of an investment platform. My responsibilities included working on both the front-end and back-end aspects of the project, ensuring seamless integration and functionality.",
-        "dates": "10/2023 - 02/2024",
-        "location": "USA, Remote"
-      },
-      {
-        "company": "Zoinks Hedge Crypto",
-        "position": "Front-End React, Crypto Developer",
-        "description": "It was an exciting startup that developed a crypto fund for profitable investments. As a developer, my role involved connecting the client's wallet, providing statistics and graphs, integrating the website with smart contracts, and enabling cryptocurrency operations such as minting, redeeming, swapping, staking, and farming.",
-        "dates": "02/2022 - 07/2023",
-        "location": "Canada, Remote"
-      },
-      {
-        "company": "Ficus Technologies",
-        "position": "Front-End Developer React",
-        "description": "Working at a company that developed an online casino platform was an exciting and stimulating experience. As a front-end developer, I had the opportunity to create engaging interfaces for the website where the casino games were integrated.",
-        "dates": "08/2021 - 02/2022",
-        "location": "Ukraine, Remote"
-      },
-      {
-        "company": "E-commerce Platform",
-        "position": "Front-End Developer Vue",
-        "description": "Contributed to the development of a cutting-edge e-commerce platform built with Vue.js. Responsibilities included designing and implementing interactive features, optimizing website performance, and ensuring cross-browser compatibility.",
-        "dates": "12/2020 - 07/2021",
-        "location": "Poland, Remote"
-      }
-    ],
-    "education": [
-      { "institution": "Skillup", "program": "Junior Front-End Dev" },
-      { "institution": "Udemy", "program": "Vue.js" },
-      { "institution": "Mate Academy", "program": "Front-End Dev" },
-      { "institution": "SoftServe", "program": "React-marathon" },
-      { "institution": "Vladilen Minin", "program": "Back-End Dev" },
-      { "institution": "Coursera", "program": "Full-Stack Web Development with React" },
-      { "institution": "Udemy Business", "program": "Advanced JavaScript" },
-      { "institution": "Lviv Cooperative College of Economics and Law", "program": "Faculty of Law" },
-      { "institution": "Lviv University of Trade and Economics", "program": "Faculty of Law" }
-    ]
-  }
+    {
+      "company": "Capgemini (Evolv Technology)",
+      "position": "Front-End Developer React",
+      "description": "At Evolv Technology, a provider of AI-enabled touchless security screening systems, I contributed to the development of their advanced security solutions. Additionally, I worked on the development of their mobile application as a React Native developer, separate from the website.",
+      "dates": "03/2024 - 07/2024",
+      "location": "USA, Remote"
+    },
+    {
+      "company": "Capgemini (Oasis Pro Marketplace)",
+      "position": "Full Stack Developer React",
+      "description": "At Oasis Pro Marketplace, I served as a Full Stack Developer on a crypto project, contributing to the development of an investment platform. My responsibilities included working on both the front-end and back-end aspects of the project, ensuring seamless integration and functionality.",
+      "dates": "10/2023 - 02/2024",
+      "location": "USA, Remote"
+    },
+    {
+      "company": "Zoinks Hedge Crypto",
+      "position": "Front-End React, Crypto Developer",
+      "description": "It was an exciting startup that developed a crypto fund for profitable investments. As a developer, my role involved connecting the client's wallet, providing statistics and graphs, integrating the website with smart contracts, and enabling cryptocurrency operations such as minting, redeeming, swapping, staking, and farming.",
+      "dates": "02/2022 - 07/2023",
+      "location": "Canada, Remote"
+    },
+    {
+      "company": "Ficus Technologies",
+      "position": "Front-End Developer React",
+      "description": "Working at a company that developed an online casino platform was an exciting and stimulating experience. As a front-end developer, I had the opportunity to create engaging interfaces for the website where the casino games were integrated.",
+      "dates": "08/2021 - 02/2022",
+      "location": "Ukraine, Remote"
+    },
+    {
+      "company": "E-commerce Platform",
+      "position": "Front-End Developer Vue",
+      "description": "Contributed to the development of a cutting-edge e-commerce platform built with Vue.js. Responsibilities included designing and implementing interactive features, optimizing website performance, and ensuring cross-browser compatibility.",
+      "dates": "12/2020 - 07/2021",
+      "location": "Poland, Remote"
+    }
+  ],
+  "education": [
+    { "institution": "Skillup", "program": "Junior Front-End Dev" },
+    { "institution": "Udemy", "program": "Vue.js" },
+    { "institution": "Mate Academy", "program": "Front-End Dev" },
+    { "institution": "SoftServe", "program": "React-marathon" },
+    { "institution": "Vladilen Minin", "program": "Back-End Dev" },
+    {
+      "institution": "Coursera",
+      "program": "Full-Stack Web Development with React"
+    },
+    { "institution": "Udemy Business", "program": "Advanced JavaScript" },
+    {
+      "institution": "Lviv Cooperative College of Economics and Law",
+      "program": "Faculty of Law"
+    },
+    {
+      "institution": "Lviv University of Trade and Economics",
+      "program": "Faculty of Law"
+    }
+  ]
 }
