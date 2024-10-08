@@ -8,7 +8,7 @@ const SoftSkills = ({ MyInfo }: { MyInfo: MyInfoType }) => {
         {MyInfo.softSkills.map((skill, index) => (
           <span
             key={index}
-            className="px-3 py-1 rounded-md border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
+            className="px-3 py-1 rounded-md border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-[0.6s]"
           >
             {skill}
           </span>
