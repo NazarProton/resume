@@ -14,6 +14,7 @@ module.exports = {
         whiteInheritLess: '#ffffff1d',
         dark: '#14223C',
         red: '#FF375B',
+        violet: '#3B3A67',
       },
       fontFamily: {
         play: ['Play'],

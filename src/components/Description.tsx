@@ -1,4 +1,4 @@
-import { MyInfoType } from './types';
+import { MyInfoType } from '../types';
 
 const Description = ({
   MyInfo,
