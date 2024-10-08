@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/description.tsx","./src/profileinfo.tsx","./src/main.tsx","./src/types.ts","./src/vite-env.d.ts"],"version":"5.6.2"}
+{"root":["./src/app.tsx","./src/main.tsx","./src/types.ts","./src/vite-env.d.ts","./src/components/contacts.tsx","./src/components/description.tsx","./src/components/education.tsx","./src/components/languages.tsx","./src/components/profileinfo.tsx","./src/components/socials.tsx","./src/components/softskills.tsx","./src/components/techskils.tsx","./src/components/workexpetience.tsx"],"version":"5.6.2"}
