@@ -1,10 +1,10 @@
 {
   "profile": {
     "name": "Proton Nazar",
-    "title": "FullStack JavaScript & Web3 Developer",
+    "title": "Senior FullStack JavaScript & Web3 Developer",
     "age": 28,
     "location": "Warsaw, Poland",
-    "description": "Hello, I am a FullStack Developer,",
+    "description": "Hello, I am a Senior FullStack Developer,",
     "description2": "I am actively looking for a job.",
     "description3": "I have over than 3 years work experience.",
     "description4": "I always continue to learn and develop my skills.",
@@ -139,15 +139,15 @@
   "experience": [
     {
       "company": "BlackStack Labs",
-      "position": "Full-Stack Developer",
-      "description": "Developed the entire front-end and back-end for BlackStack.io, a corporate website, ensuring full responsiveness and optimization for various devices.",
+      "position": "Senior FullStack Developer",
+      "description": "Worked on various client projects at BlackStack Labs, consistently delivering high-quality, efficient solutions and meeting all project goals with excellence.",
       "dates": "07/2024 - 10/2024",
       "location": "Remote",
       "link": "https://blackstack.io/"
     },
     {
       "company": "Ordeez.io",
-      "position": "Front-End Developer React",
+      "position": "Senior FullStack Developer",
       "description": "Independently developed an NFT marketplace with features for NFT migration, trading, and analytics. Managed all UI effects and collaborated closely on design development.",
       "dates": "02/2024 - 07/2024",
       "location": "Croatia, Remote",
@@ -155,7 +155,7 @@
     },
     {
       "company": "Capgemini",
-      "position": "Front-End & Full Stack Developer",
+      "position": "Senior Frontend & Fullstack Developer",
       "description": "Worked on multiple internal and external projects, including AI-powered security solutions, investment platforms, and corporate web tools.",
       "projects": [
         {
