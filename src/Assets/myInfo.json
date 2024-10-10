@@ -86,7 +86,8 @@
       "Bitcoinjs-lib",
       "Keccak256",
       "Viem",
-      "Web3"
+      "Web3",
+      "Sats-connect"
     ],
     "tools": [
       "Docker",
@@ -122,7 +123,6 @@
       "Tsparticles",
       "React-draggable",
       "React-fast-marquee",
-      "Sats-connect",
       "Swiper",
       "Typewriter-effect"
     ]
