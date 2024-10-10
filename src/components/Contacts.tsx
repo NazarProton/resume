@@ -15,7 +15,7 @@ const Contacts = ({ MyInfo }: { MyInfo: MyInfoType }) => {
         className="hover:opacity-100 opacity-70 flex gap-2 transition-opacity duration-[0.6s]"
         href={`mailto:${MyInfo.contacts.email}`}
       >
-        <i className="bi bi-envelope"></i>
+        <i className="bi bi-envelope-fill"></i>
         {MyInfo.contacts.email}
       </a>
     </div>
