@@ -72,8 +72,10 @@
       "Hardhat ",
       "Prisma",
       "Jest",
+      "Cypress",
       "Fp-ts",
-      "Effects"
+      "Effects",
+      "Swagger"
     ],
     "blockchain": [
       "Metamask.js",
@@ -96,7 +98,13 @@
       "SWR",
       "NGINX",
       "Storybook ",
-      "Uuid"
+      "Uuid",
+      "Notion",
+      "Jira",
+      "Bitbucket",
+      "Github",
+      "Figma",
+      "Spline"
     ],
     "librariesUIFrameworks": [
       "Quasar",
@@ -110,7 +118,6 @@
       "React-Toastify",
       "React-Select",
       "React-Swipeable",
-      "React-spline",
       "React-query",
       "Tsparticles",
       "React-draggable",
