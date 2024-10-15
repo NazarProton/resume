@@ -24,6 +24,11 @@ const WorkExperience = ({ MyInfo }: { MyInfo: MyInfoType }) => {
               ''
             )}
           </a>
+          {!job.projects && (
+            <h5 className="opacity-80">
+              {job.dates} <span className="text-green">|</span> {job.location}
+            </h5>
+          )}
 
           <p>{job.description}</p>
           {job.projects && job.projects.length > 0 && (
@@ -43,20 +48,15 @@ const WorkExperience = ({ MyInfo }: { MyInfo: MyInfoType }) => {
                     ) : (
                       <i className="bi bi-database-x text-orange-700"></i>
                     )}
+                    <span className="opacity-80">
+                      {project.dates} <span className="text-green">|</span>{' '}
+                      {project.location}
+                    </span>
                   </a>
                   <p>{project.description}</p>
-                  <span className="opacity-80">
-                    {project.dates} <span className="text-green">|</span>{' '}
-                    {project.location}
-                  </span>
                 </div>
               ))}
             </div>
-          )}
-          {!job.projects && (
-            <h5 className="opacity-80">
-              {job.dates} <span className="text-green">|</span> {job.location}
-            </h5>
           )}
         </div>
       ))}

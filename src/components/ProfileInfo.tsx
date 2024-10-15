@@ -16,11 +16,8 @@ const ProfileInfo = ({
           : 'pc700:flex hidden flex-col'
       }`}
     >
-      <p>{MyInfo.profile.title}</p>
       <p className="text-5xl">{MyInfo.profile.name}</p>
-      <p className="text-lg">
-        {MyInfo.profile.age} y.o. {MyInfo.profile.location}
-      </p>
+      <p>{MyInfo.profile.title}</p>
       {!isForSmallScreen && <Description MyInfo={MyInfo} />}
     </div>
   );

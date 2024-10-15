@@ -45,16 +45,6 @@ const TechSkills = ({ MyInfo }: { MyInfo: MyInfoType }) => {
             ))}
           </ul>
         </div>
-        <div>
-          <h4 className="font-semibold text-lg">Libraries/UI Frameworks:</h4>
-          <ul className="flex flex-wrap gap-1">
-            {MyInfo.techSkills.librariesUIFrameworks.map((skill, index) => (
-              <li key={index} className="whitespace-nowrap">
-                {skill}
-              </li>
-            ))}
-          </ul>
-        </div>
       </div>
     </div>
   );

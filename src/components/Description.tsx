@@ -8,16 +8,9 @@ const Description = ({
   isForSmallScreen?: boolean;
 }) => {
   return (
-    <p className={`mt-10 ${isForSmallScreen ? 'pc700:hidden' : ''}`}>
-      👋 {MyInfo.profile.description}
+    <p className={`mt-5 ${isForSmallScreen ? 'pc700:hidden' : ''}`}>
+      {MyInfo.profile.description}
       <br />
-      {MyInfo.profile.description2}
-      <br />
-      {MyInfo.profile.description3}
-      <br />
-      {MyInfo.profile.description4}
-      <br />
-      {MyInfo.profile.description5}
     </p>
   );
 };

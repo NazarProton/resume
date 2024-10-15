@@ -7,14 +7,13 @@ import WorkExperience from './components/WorkExpetience';
 import Socials from './components/Socials';
 import Contacts from './components/Contacts';
 import Languages from './components/Languages';
-import SoftSkills from './components/SoftSkills';
 import Education from './components/Education';
 
 function App() {
   return (
     <main className="p-0 m-0 w-full h-full flex justify-center font-play text-black">
-      <div className="flex my-10 w-11/12 max-w-[64rem] flex-col shadow-2xl">
-        <div className="flex pc700:flex-row flex-col">
+      <div className="flex mt-10 mb-5 w-11/12 max-w-[64rem] flex-col shadow-2xl">
+        <div className="flex pc700:flex-row flex-col pb-5">
           <div className="pc700:w-[40%] w-full flex flex-col items-center">
             <img
               className="pc700:rounded-full object-cover pc700:mt-10 z-10 w-11/12 aspect-square"
@@ -30,13 +29,14 @@ function App() {
               <Description MyInfo={MyInfo} isForSmallScreen />
               <Languages MyInfo={MyInfo} />
               <TechSkills MyInfo={MyInfo} />
+              <Education MyInfo={MyInfo} />
             </div>
           </div>
           <div className="pc700:w-[60%] w-full flex justify-center bg-whiteInherit">
             <div className="w-10/12 flex flex-col pc700:mt-10">
               <ProfileInfo MyInfo={MyInfo} />
 
-              <div className="flex flex-col gap-2 mt-5">
+              <div className="flex flex-col gap-2">
                 <div className="pc700:mt-5 flex flex-col">
                   <WorkExperience MyInfo={MyInfo} />
                 </div>
@@ -44,8 +44,6 @@ function App() {
             </div>
           </div>
         </div>
-        <SoftSkills MyInfo={MyInfo} />
-        <Education MyInfo={MyInfo} />
       </div>
     </main>
   );

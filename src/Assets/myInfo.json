@@ -2,15 +2,11 @@
   "profile": {
     "name": "Proton Nazar",
     "title": "Senior FullStack JavaScript & Web3 Developer",
-    "age": 28,
-    "location": "Warsaw, Poland",
-    "description": "Hello, I am a Senior FullStack Developer,",
-    "description2": "I am actively looking for a job.",
-    "description3": "I have over than 3 years work experience.",
-    "description4": "I always continue to learn and develop my skills.",
-    "description5": "I easily learn new things and find a common topics with the team."
+    "description": "I'm a Senior FullStack Developer with over three years of experience, driven by curiosity and the pursuit of excellence. I'm dedicated to continuous growth, eagerly expanding my skills and knowledge, and thriving in dynamic team settings. Challenges inspire me, and I approach each project believing any goal is achievable. Ready to contribute my expertise, I'm excited to bring impactful solutions to a forward-thinking team."
   },
   "contacts": {
+    "location": "Warsaw, Poland",
+    "locationLink": "https://maps.app.goo.gl/iQuCfAcmsXXJyWVEA",
     "phone": "+48 573963998",
     "email": "nproton2012@gmail.com",
     "socials": {
@@ -36,118 +32,49 @@
   ],
   "techSkills": {
     "frontend": [
-      "HTML",
-      "CSS",
-      "JavaScript (ES6+)",
-      "TypeScript",
+      "JS/TS",
       "React.js",
-      "Next.js with SSR",
-      "React-Router-Dom",
+      "Next.js",
       "Vue.js",
       "Nuxt.js",
       "React-Native",
-      "Redux-Saga",
-      "Redux-Thunk",
-      "SASS(SCSS)",
-      "PostCSS",
-      "CSS-Animations",
-      "Tailwind",
-      "Framer Motion",
-      "Styled-Components",
-      "Canvas"
+      "Redux"
     ],
     "backend": [
       "Node.js",
       "Express.js",
-      "NestJS",
-      "Firebase",
+      "Nest.js",
       "MongoDB",
-      "Mongoose",
       "PostgreSQL",
-      "REST API",
       "GraphQL",
-      "AJAX",
-      "WebSockets",
-      "Redis",
-      "Hardhat ",
-      "Prisma",
-      "Jest",
-      "Cypress",
-      "Fp-ts",
-      "Effects",
-      "Swagger"
+      "Redis"
     ],
     "blockchain": [
       "Metamask.js",
       "Ethers.js",
       "Wallet-connect",
-      "Web3modal/wagmi",
-      "Bitcoin-address-validation",
-      "Bitcoinjs-lib",
-      "Keccak256",
-      "Viem",
+      "Wagmi",
       "Web3",
-      "Sats-connect"
+      "Sats-connect",
+      "Unisat"
     ],
     "tools": [
       "Docker",
-      "Webpack",
-      "jQuery",
-      "OOP",
       "Chart.js",
-      "Axios",
-      "SWR",
-      "NGINX",
-      "Storybook ",
-      "Uuid",
-      "Notion",
+      "GSAP ",
       "Jira",
       "Bitbucket",
       "Github",
       "Figma",
-      "Spline"
-    ],
-    "librariesUIFrameworks": [
-      "Quasar",
-      "Material.ui",
-      "AntDesign",
-      "Headless.ui",
-      "Bootstrap 5",
-      "React-Strap",
-      "React-Bootstrap",
-      "React-Fast-Marquee",
-      "React-Toastify",
-      "React-Select",
-      "React-Swipeable",
-      "React-query",
-      "Tsparticles",
-      "React-draggable",
-      "React-fast-marquee",
-      "Swiper",
-      "Typewriter-effect"
+      "Spline",
+      "Particles.js"
     ]
   },
-  "softSkills": [
-    "GTD",
-    "Teamwork",
-    "Communication",
-    "Problem-solving",
-    "Time management",
-    "Critical thinking",
-    "Decision-making",
-    "Creativity",
-    "Openness to criticism",
-    "Adaptability",
-    "Resourcefulness",
-    "Self-motivation",
-    "Attention to detail",
-    "KPI"
-  ],
   "experience": [
     {
       "company": "BlackStack Labs",
       "position": "Senior FullStack Developer",
-      "description": "Worked on various client projects at BlackStack Labs, consistently delivering high-quality, efficient solutions and meeting all project goals with excellence.",
+      "description": "Contributed to diverse client projects at BlackStack Labs, consistently delivering high-quality and efficient solutions while optimizing code for performance and stability. Enhanced integration processes and met project goals on schedule, ensuring client satisfaction with each deployment.",
       "dates": "07/2024 - 10/2024",
       "location": "Remote",
       "link": "https://blackstack.io/"
@@ -155,62 +82,30 @@
     {
       "company": "Ordeez.io",
       "position": "Senior FullStack Developer",
-      "description": "Independently developed an NFT marketplace with features for NFT migration, trading, and analytics. Managed all UI effects and collaborated closely on design development.",
+      "description": "Acted as the sole developer in building an NFT marketplace with features like NFT migration, trading, and analytics. Developed complex UI effects and worked closely with designers to create an appealing user experience, focusing on seamless navigation and functionality.",
       "dates": "02/2024 - 07/2024",
       "location": "Croatia, Remote",
       "link": "https://ordeez.io/"
     },
     {
       "company": "Capgemini",
-      "position": "Senior Frontend & Fullstack Developer",
-      "description": "Worked on multiple internal and external projects, including AI-powered security solutions, investment platforms, and corporate web tools.",
-      "projects": [
-        {
-          "name": "HR Chrome Extension",
-          "description": "Developed a Chrome extension for LinkedIn to store employee profiles in a database for HR.",
-          "dates": "07/2024 - 10/2024",
-          "location": "Ukraine, Remote"
-        },
-        {
-          "name": "Capgemini-engineering.com.ua",
-          "description": "Maintained and supported the corporate website, ensuring up-to-date content and optimal performance.",
-          "dates": "07/2024 - 10/2024",
-          "location": "Ukraine, Remote",
-          "link": "https://capgemini-engineering.com.ua/"
-        },
-        {
-          "name": "Promotion Matrix",
-          "description": "Created an internal tool to manage and promote salary data, providing insights for HR management.",
-          "dates": "07/2024 - 10/2024",
-          "location": "Ukraine, Remote"
-        },
-        {
-          "name": "Evolv Technology",
-          "description": "Developed advanced security screening solutions and a separate mobile application as a React Native developer.",
-          "dates": "03/2024 - 07/2024",
-          "location": "USA, Remote",
-          "link": "https://evolv.com/"
-        },
-        {
-          "name": "Oasis Pro Marketplace",
-          "description": "Contributed to the development of an investment platform with seamless front-end and back-end integration.",
-          "dates": "10/2023 - 02/2024",
-          "location": "USA, Remote",
-          "link": "https://www.oasispromarkets.com/"
-        }
-      ]
+      "position": "Senior Frontend & FullStack Developer",
+      "dates": "10/2023 - 10/2024",
+      "location": "Ukraine, Remote",
+      "description": "Worked across multiple roles, including Full Stack and React Native developer, supporting well-known companies in creating impactful solutions that benefit humanity. Contributed to projects such as AI-driven security tools, investment platforms, and corporate applications, adding meaningful features and maintaining high standards of performance.",
+      "link": "https://capgemini-engineering.com.ua/"
     },
     {
       "company": "Zoinks Hedge Crypto",
       "position": "Front-End React, Crypto Developer",
-      "description": "Contributed to a crypto fund platform, integrating smart contracts for staking, minting, redeeming, and providing interactive dashboards.",
+      "description": "Contributed to a crypto fund platform, integrating smart contracts for staking, minting, and redeeming, and creating interactive dashboards. Developed two versions of their website independently and implemented a streamlined system for managing smart contracts, making processes more accessible and efficient.",
       "dates": "02/2022 - 07/2023",
       "location": "Canada, Remote"
     },
     {
       "company": "Ficus Technologies",
       "position": "Front-End Developer React",
-      "description": "Built interactive interfaces for an online casino platform with focus on performance and user experience.",
+      "description": "Worked as part of a team on various client projects, focusing on building responsive, interactive interfaces and enhancing user engagement. Contributed innovative ideas and solutions for improved functionality and design, significantly enhancing user satisfaction.",
       "dates": "08/2021 - 02/2022",
       "location": "Ukraine, Remote",
       "link": "https://ficustechnologies.com/"
@@ -218,40 +113,12 @@
     {
       "company": "Fortuna Finance",
       "position": "Front-End Developer Vue",
-      "description": "Developed a staking and investment platform with Vue.js, focusing on UX and cross-browser compatibility for crypto enthusiasts.",
+      "description": "Served as the lead developer, creating a staking and investment platform with Vue.js, focusing on user experience, cross-browser compatibility, and smooth interaction for crypto enthusiasts. Ensured a seamless and intuitive experience for end users.",
       "dates": "12/2020 - 07/2021",
       "location": "Bulgaria, Remote"
     }
   ],
   "education": [
-    {
-      "institution": "Skillup",
-      "program": "Front-End Dev"
-    },
-    {
-      "institution": "Udemy",
-      "program": "Vue.js"
-    },
-    {
-      "institution": "Coursera",
-      "program": "React Specialization"
-    },
-    {
-      "institution": "Meta",
-      "program": "Front-End Development Certificate"
-    },
-    {
-      "institution": "Udacity",
-      "program": "Advanced JavaScript"
-    },
-    {
-      "institution": "Pluralsight",
-      "program": "Building Scalable Web Apps with React"
-    },
-    {
-      "institution": "Codecademy",
-      "program": "Asynchronous JavaScript and APIs"
-    },
     {
       "institution": "Lviv Cooperative College",
       "program": "Faculty of Law"
