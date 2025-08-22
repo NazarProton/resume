@@ -2,7 +2,7 @@
   "profile": {
     "name": "Proton Nazar",
     "title": "Senior FullStack JavaScript & Web3 Developer",
-    "description": "I'm a Senior FullStack Developer with over three years of experience, driven by curiosity and the pursuit of excellence. I'm dedicated to continuous growth, eagerly expanding my skills and knowledge, and thriving in dynamic team settings. Challenges inspire me, and I approach each project believing any goal is achievable. Ready to contribute my expertise, I'm excited to bring impactful solutions to a forward-thinking team."
+    "description": "I'm a Senior FullStack Developer with over four years of experience, driven by curiosity and the pursuit of excellence. I'm dedicated to continuous growth, eagerly expanding my skills and knowledge, and thriving in dynamic team settings. Challenges inspire me, and I approach each project believing any goal is achievable. Ready to contribute my expertise, I'm excited to bring impactful solutions to a forward-thinking team."
   },
   "contacts": {
     "location": "Warsaw, Poland",
@@ -38,7 +38,9 @@
       "Vue.js",
       "Nuxt.js",
       "React-Native",
-      "Redux"
+      "Redux",
+      "Zustand",
+      "Tailwind CSS"
     ],
     "backend": [
       "Node.js",
@@ -72,18 +74,56 @@
   },
   "experience": [
     {
+      "company": "Bridge Labs",
+      "position": "Senior FullStack Developer",
+      "description": "Building Web3 job marketplace platform connecting Web3 specialists with projects, featuring resume-based talent search and comprehensive vetting system. Currently in active development phase, implementing rapid deployment matching and success tracking features.",
+      "dates": "07/2025 - Present",
+      "location": "Remote",
+      "link": "https://bridge-labs.io/"
+    },
+    {
+      "company": "GiftsBattle",
+      "position": "Senior FullStack Developer",
+      "description": "Developed Telegram mini-app and website gambling platform, significantly optimizing performance and user experience. Enhanced animations, improved display rendering, and implemented comprehensive performance optimizations that dramatically increased project speed and responsiveness.",
+      "dates": "04/2025 - 08/2025",
+      "location": "Remote",
+      "link": "https://giftsbattle.com/"
+    },
+    {
+      "company": "Prompty",
+      "position": "Senior Frontend Developer",
+      "description": "Building AI-powered app generation platform that creates applications from text prompts in containers, with direct Google Play Store publishing capabilities. Currently in development phase, implementing containerized deployment system and automated app building pipeline.",
+      "dates": "05/2025 - 08/2025",
+      "location": "Remote",
+      "link": "https://www.goprompty.io/"
+    },
+    {
+      "company": "Darwin Labs",
+      "position": "Senior FullStack Developer",
+      "description": "Built self-evolving AI systems that autonomously develop and improve themselves. Developed machine learning frameworks for continuous self-optimization and autonomous growth capabilities.",
+      "dates": "03/2025 - 07/2025",
+      "location": "Remote",
+      "link": "https://darwinslabs.ai/"
+    },
+    {
+      "company": "Morphis Ai",
+      "position": "Senior FullStack Developer",
+      "description": "Built manual agent creation system with detailed configuration options, including text and voice chat interfaces. Created fine-tuned control settings for agent behavior and performance optimization.",
+      "dates": "02/2025 - 05/2025",
+      "location": "Remote"
+    },
+    {
       "company": "BlackStack Labs",
       "position": "Senior FullStack Developer",
       "description": "Contributed to diverse client projects at BlackStack Labs, consistently delivering high-quality and efficient solutions while optimizing code for performance and stability. Enhanced integration processes and met project goals on schedule, ensuring client satisfaction with each deployment.",
-      "dates": "07/2024 - 10/2024",
-      "location": "Remote",
-      "link": "https://blackstack.io/"
+      "dates": "07/2024 - 02/2025",
+      "location": "Remote"
     },
     {
       "company": "Ordeez.io",
       "position": "Senior FullStack Developer",
       "description": "Acted as the sole developer in building an NFT marketplace with features like NFT migration, trading, and analytics. Developed complex UI effects and worked closely with designers to create an appealing user experience, focusing on seamless navigation and functionality.",
-      "dates": "02/2024 - 07/2024",
+      "dates": "02/2024 - 04/2025",
       "location": "Croatia, Remote",
       "link": "https://ordeez.io/"
     },
