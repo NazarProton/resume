@@ -1,3 +1,5 @@
+export type Locale = 'en' | 'uk' | 'pl';
+
 export type MyInfoType = {
   profile: {
     name: string;
@@ -26,6 +28,7 @@ export type MyInfoType = {
     blockchain: string[];
     tools: string[];
   };
+  softSkills: string[];
   experience: Array<{
     company: string;
     position: string;
@@ -46,3 +49,5 @@ export type MyInfoType = {
     program: string;
   }>;
 };
+
+export type MyInfoByLocaleType = Record<Locale, MyInfoType>;

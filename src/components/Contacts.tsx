@@ -1,9 +1,9 @@
 import { MyInfoType } from '../types';
 
-const Contacts = ({ MyInfo }: { MyInfo: MyInfoType }) => {
+const Contacts = ({ MyInfo, title }: { MyInfo: MyInfoType; title: string }) => {
   return (
     <div className="w-full flex justify-center gap-2 flex-col">
-      <h3 className="text-xl text-orange-500">Contacts:</h3>
+      <h3 className="text-xl text-orange-500">{title}</h3>
       <a
         className="hover:opacity-100 opacity-70 flex gap-2  transition-opacity duration-[0.6s]"
         href={`tel:${MyInfo.contacts.phone}`}
@@ -20,6 +20,7 @@ const Contacts = ({ MyInfo }: { MyInfo: MyInfoType }) => {
       </a>
       <a
         target="_blank"
+        rel="noopener noreferrer"
         className="hover:opacity-100 opacity-70 flex gap-2 transition-opacity duration-[0.6s]"
         href={`${MyInfo.contacts.locationLink}`}
       >
