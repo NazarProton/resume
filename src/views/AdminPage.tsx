@@ -22,6 +22,19 @@ function AdminPage({ resumeData }: Props) {
   };
 
   const handleSave = async () => {
+    let dataToSave = draftData;
+    try {
+      const parsedLocaleData = JSON.parse(rawText) as MyInfoByLocaleType[Locale];
+      dataToSave = {
+        ...draftData,
+        [activeLocale]: parsedLocaleData,
+      };
+      setDraftData(dataToSave);
+    } catch {
+      setMessage(`Invalid ${activeLocale.toUpperCase()} raw JSON. Fix it before saving.`);
+      return;
+    }
+
     setIsSaving(true);
     setMessage('Saving...');
     try {
@@ -30,7 +43,7 @@ function AdminPage({ resumeData }: Props) {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(draftData),
+        body: JSON.stringify(dataToSave),
       });
 
       if (!response.ok) {
