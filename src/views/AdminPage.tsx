@@ -2,7 +2,7 @@
 
 import { FormEvent, useMemo, useState } from 'react';
 import JsonEditor from '../components/admin/JsonEditor';
-import { MyInfoByLocaleType } from '../types';
+import { Locale, MyInfoByLocaleType } from '../types';
 
 type Props = {
   resumeData: MyInfoByLocaleType;
@@ -11,13 +11,14 @@ type Props = {
 const DEFAULT_JSON_PATH = '/data/resume.default.json';
 
 function AdminPage({ resumeData }: Props) {
+  const [activeLocale, setActiveLocale] = useState<Locale>('en');
   const [draftData, setDraftData] = useState<MyInfoByLocaleType>(resumeData);
-  const [rawText, setRawText] = useState(JSON.stringify(resumeData, null, 2));
+  const [rawText, setRawText] = useState(JSON.stringify(resumeData.en, null, 2));
   const [message, setMessage] = useState('');
   const [isSaving, setIsSaving] = useState(false);
 
-  const syncRawText = (data: MyInfoByLocaleType) => {
-    setRawText(JSON.stringify(data, null, 2));
+  const syncRawText = (data: MyInfoByLocaleType, locale: Locale = activeLocale) => {
+    setRawText(JSON.stringify(data[locale], null, 2));
   };
 
   const handleSave = async () => {
@@ -47,9 +48,13 @@ function AdminPage({ resumeData }: Props) {
   const handleApplyRaw = (e: FormEvent) => {
     e.preventDefault();
     try {
-      const parsed = JSON.parse(rawText) as MyInfoByLocaleType;
-      setDraftData(parsed);
-      setMessage('Raw JSON applied to editor draft');
+      const parsedLocaleData = JSON.parse(rawText) as MyInfoByLocaleType[Locale];
+      const nextData: MyInfoByLocaleType = {
+        ...draftData,
+        [activeLocale]: parsedLocaleData,
+      };
+      setDraftData(nextData);
+      setMessage(`${activeLocale.toUpperCase()} raw JSON applied to editor draft`);
     } catch {
       setMessage('Invalid JSON format');
     }
@@ -61,7 +66,7 @@ function AdminPage({ resumeData }: Props) {
       if (!response.ok) throw new Error('failed');
       const defaults = (await response.json()) as MyInfoByLocaleType;
       setDraftData(defaults);
-      syncRawText(defaults);
+      syncRawText(defaults, activeLocale);
       setMessage('Default JSON loaded to draft. Click Save to persist.');
     } catch {
       setMessage('Failed to load default JSON');
@@ -123,25 +128,48 @@ function AdminPage({ resumeData }: Props) {
             You can edit every field with pen label, add with + buttons, and delete any item
             (jobs, skills, keywords, descriptions, links).
           </p>
+          <div className="mt-3 flex gap-2">
+            {(['en', 'uk', 'pl'] as Locale[]).map((locale) => (
+              <button
+                key={locale}
+                type="button"
+                onClick={() => {
+                  setActiveLocale(locale);
+                  syncRawText(draftData, locale);
+                }}
+                className={`rounded px-3 py-1 text-xs font-bold text-white ${
+                  activeLocale === locale ? 'bg-orange-500' : 'bg-slate-700'
+                }`}
+              >
+                {locale.toUpperCase()}
+              </button>
+            ))}
+          </div>
           <p className="mt-1 text-xs text-gray-500">JSON size: {jsonSize} chars</p>
           {message ? <p className="mt-1 text-sm font-semibold text-emerald-700">{message}</p> : null}
         </div>
 
         <div className="grid gap-4 lg:grid-cols-2">
           <section className="rounded border border-gray-300 bg-white p-4">
-            <h2 className="mb-3 text-lg font-bold">Visual JSON Editor</h2>
+            <h2 className="mb-3 text-lg font-bold">
+              Visual JSON Editor ({activeLocale.toUpperCase()})
+            </h2>
             <JsonEditor
-              value={draftData}
+              value={draftData[activeLocale]}
               onChange={(nextData) => {
-                const typed = nextData as MyInfoByLocaleType;
-                setDraftData(typed);
-                syncRawText(typed);
+                const typedLocale = nextData as MyInfoByLocaleType[Locale];
+                const nextFullData: MyInfoByLocaleType = {
+                  ...draftData,
+                  [activeLocale]: typedLocale,
+                };
+                setDraftData(nextFullData);
+                syncRawText(nextFullData, activeLocale);
               }}
             />
           </section>
 
           <section className="rounded border border-gray-300 bg-white p-4">
-            <h2 className="mb-3 text-lg font-bold">Raw JSON</h2>
+            <h2 className="mb-3 text-lg font-bold">Raw JSON ({activeLocale.toUpperCase()})</h2>
             <form onSubmit={handleApplyRaw} className="flex flex-col gap-2">
               <textarea
                 className="min-h-[36rem] w-full rounded border border-gray-300 p-2 font-mono text-xs"
