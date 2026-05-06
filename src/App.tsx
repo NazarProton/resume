@@ -1,17 +1,16 @@
-'use client';
-
 import { useRef, useState } from 'react';
-import Description from '../components/Description';
-import ProfileInfo from '../components/ProfileInfo';
-import myPhoto from '../Assets/myPhoto.webp';
-import TechSkills from '../components/TechSkils';
-import WorkExperience from '../components/WorkExpetience';
-import Socials from '../components/Socials';
-import Contacts from '../components/Contacts';
-import Languages from '../components/Languages';
-import Education from '../components/Education';
-import SoftSkills from '../components/SoftSkills';
-import { Locale, MyInfoByLocaleType } from '../types';
+import MyInfo from './Assets/myInfo.json';
+import Description from './components/Description';
+import ProfileInfo from './components/ProfileInfo';
+import myPhoto from './Assets/myPhoto.webp';
+import TechSkills from './components/TechSkils';
+import WorkExperience from './components/WorkExpetience';
+import Socials from './components/Socials';
+import Contacts from './components/Contacts';
+import Languages from './components/Languages';
+import Education from './components/Education';
+import SoftSkills from './components/SoftSkills';
+import { Locale, MyInfoByLocaleType } from './types';
 
 const PDF_ZOOM = 0.95;
 const PDF_PAGE_MARGIN_MM = 8;
@@ -90,15 +89,12 @@ const UI_TEXT: Record<
   },
 };
 
-type Props = {
-  resumeData: MyInfoByLocaleType;
-};
-
-function ResumePage({ resumeData }: Props) {
+function App() {
   const [locale, setLocale] = useState<Locale>('en');
   const resumeRef = useRef<HTMLDivElement>(null);
   const [isDownloadingPdf, setIsDownloadingPdf] = useState(false);
-  const currentInfo = resumeData[locale] ?? resumeData.en;
+  const myInfoByLocale = MyInfo as MyInfoByLocaleType;
+  const currentInfo = myInfoByLocale[locale] ?? myInfoByLocale.en;
   const uiText = UI_TEXT[locale];
 
   const handleDownloadPdf = async () => {
@@ -122,6 +118,7 @@ function ResumePage({ resumeData }: Props) {
           ) as HTMLElement | null;
           if (!clonedResume) return;
 
+          // Force desktop-like width so right column stays on the right.
           clonedResume.style.width = '1024px';
           clonedResume.style.maxWidth = '1024px';
           clonedResume.style.margin = '0 auto';
@@ -175,7 +172,7 @@ function ResumePage({ resumeData }: Props) {
           <div className="pc700:w-[40%] w-full flex flex-col items-center">
             <img
               className="pc700:rounded-full object-cover pc700:mt-10 z-10 w-11/12 aspect-square"
-              src={myPhoto.src}
+              src={myPhoto}
               alt="Profile"
             />
             <div className="w-10/12">
@@ -194,6 +191,7 @@ function ResumePage({ resumeData }: Props) {
           <div className="pc700:w-[60%] w-full flex justify-center bg-whiteInherit">
             <div className="w-10/12 flex flex-col pc700:mt-10">
               <ProfileInfo MyInfo={currentInfo} />
+
               <div className="flex flex-col gap-2">
                 <div className="pc700:mt-5 flex flex-col">
                   <WorkExperience
@@ -226,13 +224,6 @@ function ResumePage({ resumeData }: Props) {
           </button>
         ))}
       </div>
-      <a
-        href="/admin"
-        data-html2canvas-ignore="true"
-        className="fixed bottom-16 right-4 z-50 rounded-lg bg-emerald-600 px-4 py-2 text-sm font-bold text-white shadow-lg transition-opacity hover:opacity-90 print:hidden"
-      >
-        Admin
-      </a>
       <button
         data-html2canvas-ignore="true"
         type="button"
@@ -246,5 +237,4 @@ function ResumePage({ resumeData }: Props) {
   );
 }
 
-export default ResumePage;
-
+export default App;
