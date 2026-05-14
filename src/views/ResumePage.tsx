@@ -1,7 +1,6 @@
 'use client';
 
 import { useRef, useState } from 'react';
-import { useEffect } from 'react';
 import Description from '../components/Description';
 import ProfileInfo from '../components/ProfileInfo';
 import myPhoto from '../Assets/myPhoto.webp';
@@ -99,30 +98,8 @@ function ResumePage({ resumeData }: Props) {
   const [locale, setLocale] = useState<Locale>('en');
   const resumeRef = useRef<HTMLDivElement>(null);
   const [isDownloadingPdf, setIsDownloadingPdf] = useState(false);
-  const [canOpenAdmin, setCanOpenAdmin] = useState(false);
   const currentInfo = resumeData[locale] ?? resumeData.en;
   const uiText = UI_TEXT[locale];
-
-  useEffect(() => {
-    let isMounted = true;
-
-    const checkAdminAccess = async () => {
-      try {
-        const response = await fetch('/api/resume', { cache: 'no-store' });
-        if (!isMounted) return;
-        setCanOpenAdmin(response.ok);
-      } catch {
-        if (!isMounted) return;
-        setCanOpenAdmin(false);
-      }
-    };
-
-    checkAdminAccess();
-
-    return () => {
-      isMounted = false;
-    };
-  }, []);
 
   const handleDownloadPdf = async () => {
     if (!resumeRef.current || isDownloadingPdf) return;
@@ -249,15 +226,6 @@ function ResumePage({ resumeData }: Props) {
           </button>
         ))}
       </div>
-      {canOpenAdmin ? (
-        <a
-          href="/admin"
-          data-html2canvas-ignore="true"
-          className="fixed bottom-16 right-4 z-50 rounded-lg bg-emerald-600 px-4 py-2 text-sm font-bold text-white shadow-lg transition-opacity hover:opacity-90 print:hidden"
-        >
-          Admin
-        </a>
-      ) : null}
       <button
         data-html2canvas-ignore="true"
         type="button"
