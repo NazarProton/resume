@@ -1,5 +1,23 @@
 export type Locale = 'en' | 'uk' | 'pl';
 
+export type ResumeUiText = {
+  contacts: string;
+  languages: string;
+  softSkills: string;
+  education: string;
+  workExperience: string;
+  projectsAt: string;
+  tech: {
+    title: string;
+    frontend: string;
+    backend: string;
+    blockchain: string;
+    tools: string;
+  };
+  downloadPdf: string;
+  generatingPdf: string;
+};
+
 export type MyInfoType = {
   profile: {
     name: string;
@@ -51,3 +69,11 @@ export type MyInfoType = {
 };
 
 export type MyInfoByLocaleType = Record<Locale, MyInfoType>;
+
+export type ResumeUiTextByLocaleType = Record<Locale, ResumeUiText>;
+
+export type ResumeDocumentType = {
+  content: MyInfoByLocaleType;
+  uiText: ResumeUiTextByLocaleType;
+  updatedAt?: string;
+};

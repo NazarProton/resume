@@ -29,5 +29,34 @@ ADMIN_USER=admin
 ADMIN_PASS=PUT_YOUR_PASSWORD_HERE
 ```
 
-The data is stored in `data/resume.json`.
-Default reset source is `public/data/resume.default.json`.
+## Persistent resume data
+
+The code keeps only a default seed in `public/data/resume.default.json`.
+Live edits from `/admin` are stored separately, so they are not overwritten by a redeploy.
+
+### Serverless / Vercel
+
+Create an Upstash Redis / Vercel KV database and set:
+
+```env
+RESUME_KV_REST_API_URL=https://...
+RESUME_KV_REST_API_TOKEN=...
+RESUME_KV_KEY=resume:content
+```
+
+The app also recognizes Vercel KV names:
+
+```env
+KV_REST_API_URL=https://...
+KV_REST_API_TOKEN=...
+```
+
+### Local / VPS file storage
+
+Set `RESUME_DATA_FILE` to a path outside the deployed git checkout:
+
+```env
+RESUME_DATA_FILE=/var/lib/resume/resume.json
+```
+
+If no persistent storage env vars are set, the app falls back to `data/resume.json` for local compatibility.

@@ -1,15 +1,16 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { Locale, MyInfoByLocaleType, MyInfoType } from '../types';
+import { Locale, MyInfoType, ResumeDocumentType, ResumeUiText } from '../types';
 
 type Props = {
-  resumeData: MyInfoByLocaleType;
+  resumeDocument: ResumeDocumentType;
 };
 
 type TechGroup = keyof MyInfoType['techSkills'];
 
 type EditTarget =
+  | { kind: 'uiText'; title: string }
   | { kind: 'profile'; title: string }
   | { kind: 'contacts'; title: string }
   | { kind: 'techSkills'; group: TechGroup; title: string }
@@ -27,8 +28,8 @@ const TECH_LABELS: Record<TechGroup, string> = {
   tools: 'Tools',
 };
 
-const cloneData = (data: MyInfoByLocaleType): MyInfoByLocaleType =>
-  JSON.parse(JSON.stringify(data)) as MyInfoByLocaleType;
+const cloneDocument = (data: ResumeDocumentType): ResumeDocumentType =>
+  JSON.parse(JSON.stringify(data)) as ResumeDocumentType;
 
 const linesToList = (value: string) =>
   value
@@ -36,52 +37,61 @@ const linesToList = (value: string) =>
     .map((line) => line.trim())
     .filter(Boolean);
 
-function AdminPage({ resumeData }: Props) {
-  const [draftData, setDraftData] = useState<MyInfoByLocaleType>(resumeData);
-  const [modalData, setModalData] = useState<MyInfoByLocaleType | null>(null);
+function AdminPage({ resumeDocument }: Props) {
+  const [draftDocument, setDraftDocument] = useState<ResumeDocumentType>(resumeDocument);
+  const [modalDocument, setModalDocument] = useState<ResumeDocumentType | null>(null);
   const [editTarget, setEditTarget] = useState<EditTarget | null>(null);
   const [message, setMessage] = useState('');
   const [isSaving, setIsSaving] = useState(false);
 
-  const preview = draftData.en;
+  const preview = draftDocument.content.en;
   const modalTitle = editTarget?.title ?? '';
 
   const openEditor = (target: EditTarget) => {
     setEditTarget(target);
-    setModalData(cloneData(draftData));
+    setModalDocument(cloneDocument(draftDocument));
     setMessage('');
   };
 
   const closeEditor = () => {
     if (isSaving) return;
     setEditTarget(null);
-    setModalData(null);
+    setModalDocument(null);
   };
 
   const updateLocale = (locale: Locale, updater: (info: MyInfoType) => void) => {
-    setModalData((current) => {
+    setModalDocument((current) => {
       if (!current) return current;
-      const next = cloneData(current);
-      updater(next[locale]);
+      const next = cloneDocument(current);
+      updater(next.content[locale]);
       return next;
     });
   };
 
-  const saveData = async (nextData: MyInfoByLocaleType, successMessage: string) => {
+  const updateUiLocale = (locale: Locale, updater: (text: ResumeUiText) => void) => {
+    setModalDocument((current) => {
+      if (!current) return current;
+      const next = cloneDocument(current);
+      updater(next.uiText[locale]);
+      return next;
+    });
+  };
+
+  const saveData = async (nextDocument: ResumeDocumentType, successMessage: string) => {
     setIsSaving(true);
     setMessage('Saving...');
     try {
       const response = await fetch('/api/resume', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(nextData),
+        body: JSON.stringify(nextDocument),
       });
 
       if (!response.ok) {
         throw new Error('Save failed');
       }
 
-      setDraftData(nextData);
+      setDraftDocument(nextDocument);
       setMessage(successMessage);
       return true;
     } catch {
@@ -93,15 +103,15 @@ function AdminPage({ resumeData }: Props) {
   };
 
   const handleModalSave = async () => {
-    if (!modalData) return;
-    const didSave = await saveData(modalData, 'Saved');
+    if (!modalDocument) return;
+    const didSave = await saveData(modalDocument, 'Saved');
     if (didSave) {
       setEditTarget(null);
-      setModalData(null);
+      setModalDocument(null);
     }
   };
 
-  const jsonSize = useMemo(() => JSON.stringify(draftData).length, [draftData]);
+  const jsonSize = useMemo(() => JSON.stringify(draftDocument).length, [draftDocument]);
 
   return (
     <main className="min-h-screen bg-zinc-100 p-4 font-play text-zinc-950">
@@ -160,6 +170,16 @@ function AdminPage({ resumeData }: Props) {
               onEdit={() => openEditor({ kind: 'softSkills', title: 'Soft Skills' })}
             >
               <TagList items={preview.softSkills} />
+            </SectionCard>
+
+            <SectionCard
+              title="UI Labels"
+              actionLabel="Edit interface labels"
+              onEdit={() => openEditor({ kind: 'uiText', title: 'UI Labels' })}
+            >
+              <InfoLine label="Download" value={draftDocument.uiText.en.downloadPdf} />
+              <InfoLine label="Work" value={draftDocument.uiText.en.workExperience} />
+              <InfoLine label="Tech" value={draftDocument.uiText.en.tech.title} />
             </SectionCard>
           </aside>
 
@@ -251,15 +271,16 @@ function AdminPage({ resumeData }: Props) {
         </section>
       </div>
 
-      {editTarget && modalData ? (
+      {editTarget && modalDocument ? (
         <EditorModal
           title={modalTitle}
           target={editTarget}
-          data={modalData}
+          document={modalDocument}
           isSaving={isSaving}
           onClose={closeEditor}
           onSave={handleModalSave}
           updateLocale={updateLocale}
+          updateUiLocale={updateUiLocale}
         />
       ) : null}
     </main>
@@ -362,19 +383,21 @@ function TagList({ items }: { items: string[] }) {
 function EditorModal({
   title,
   target,
-  data,
+  document,
   isSaving,
   onClose,
   onSave,
   updateLocale,
+  updateUiLocale,
 }: {
   title: string;
   target: EditTarget;
-  data: MyInfoByLocaleType;
+  document: ResumeDocumentType;
   isSaving: boolean;
   onClose: () => void;
   onSave: () => void;
   updateLocale: (locale: Locale, updater: (info: MyInfoType) => void) => void;
+  updateUiLocale: (locale: Locale, updater: (text: ResumeUiText) => void) => void;
 }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
@@ -399,8 +422,9 @@ function EditorModal({
               key={locale}
               locale={locale}
               target={target}
-              data={data}
+              document={document}
               updateLocale={updateLocale}
+              updateUiLocale={updateUiLocale}
             />
           ))}
         </div>
@@ -431,15 +455,18 @@ function EditorModal({
 function LanguageEditor({
   locale,
   target,
-  data,
+  document,
   updateLocale,
+  updateUiLocale,
 }: {
   locale: Locale;
   target: EditTarget;
-  data: MyInfoByLocaleType;
+  document: ResumeDocumentType;
   updateLocale: (locale: Locale, updater: (info: MyInfoType) => void) => void;
+  updateUiLocale: (locale: Locale, updater: (text: ResumeUiText) => void) => void;
 }) {
-  const info = data[locale];
+  const info = document.content[locale];
+  const uiText = document.uiText[locale];
 
   return (
     <section className="border border-zinc-300 bg-zinc-50 p-3">
@@ -447,7 +474,7 @@ function LanguageEditor({
         {locale}
       </h3>
       <div className="flex flex-col gap-3">
-        {renderFields(target, info, locale, updateLocale)}
+        {renderFields(target, info, uiText, locale, updateLocale, updateUiLocale)}
       </div>
     </section>
   );
@@ -456,9 +483,83 @@ function LanguageEditor({
 function renderFields(
   target: EditTarget,
   info: MyInfoType,
+  uiText: ResumeUiText,
   locale: Locale,
   updateLocale: (locale: Locale, updater: (info: MyInfoType) => void) => void,
+  updateUiLocale: (locale: Locale, updater: (text: ResumeUiText) => void) => void,
 ) {
+  if (target.kind === 'uiText') {
+    return (
+      <>
+        <TextInput
+          label="Contacts title"
+          value={uiText.contacts}
+          onChange={(value) => updateUiLocale(locale, (item) => { item.contacts = value; })}
+        />
+        <TextInput
+          label="Languages title"
+          value={uiText.languages}
+          onChange={(value) => updateUiLocale(locale, (item) => { item.languages = value; })}
+        />
+        <TextInput
+          label="Soft skills title"
+          value={uiText.softSkills}
+          onChange={(value) => updateUiLocale(locale, (item) => { item.softSkills = value; })}
+        />
+        <TextInput
+          label="Education title"
+          value={uiText.education}
+          onChange={(value) => updateUiLocale(locale, (item) => { item.education = value; })}
+        />
+        <TextInput
+          label="Work experience title"
+          value={uiText.workExperience}
+          onChange={(value) => updateUiLocale(locale, (item) => { item.workExperience = value; })}
+        />
+        <TextInput
+          label="Projects at label"
+          value={uiText.projectsAt}
+          onChange={(value) => updateUiLocale(locale, (item) => { item.projectsAt = value; })}
+        />
+        <TextInput
+          label="Tech skills title"
+          value={uiText.tech.title}
+          onChange={(value) => updateUiLocale(locale, (item) => { item.tech.title = value; })}
+        />
+        <TextInput
+          label="Frontend label"
+          value={uiText.tech.frontend}
+          onChange={(value) => updateUiLocale(locale, (item) => { item.tech.frontend = value; })}
+        />
+        <TextInput
+          label="Backend label"
+          value={uiText.tech.backend}
+          onChange={(value) => updateUiLocale(locale, (item) => { item.tech.backend = value; })}
+        />
+        <TextInput
+          label="Blockchain label"
+          value={uiText.tech.blockchain}
+          onChange={(value) => updateUiLocale(locale, (item) => { item.tech.blockchain = value; })}
+        />
+        <TextInput
+          label="Tools label"
+          value={uiText.tech.tools}
+          onChange={(value) => updateUiLocale(locale, (item) => { item.tech.tools = value; })}
+        />
+        <TextInput
+          label="Download PDF button"
+          value={uiText.downloadPdf}
+          onChange={(value) => updateUiLocale(locale, (item) => { item.downloadPdf = value; })}
+        />
+        <TextInput
+          label="Generating PDF button"
+          value={uiText.generatingPdf}
+          onChange={(value) => updateUiLocale(locale, (item) => { item.generatingPdf = value; })}
+        />
+      </>
+    );
+  }
+
   if (target.kind === 'profile') {
     return (
       <>

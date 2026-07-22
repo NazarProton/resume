@@ -11,95 +11,22 @@ import Contacts from '../components/Contacts';
 import Languages from '../components/Languages';
 import Education from '../components/Education';
 import SoftSkills from '../components/SoftSkills';
-import { Locale, MyInfoByLocaleType } from '../types';
+import { Locale, ResumeDocumentType } from '../types';
 
 const PDF_ZOOM = 0.95;
 const PDF_PAGE_MARGIN_MM = 8;
 const PDF_CAPTURE_WIDTH = 1280;
 
-const UI_TEXT: Record<
-  Locale,
-  {
-    contacts: string;
-    languages: string;
-    softSkills: string;
-    education: string;
-    workExperience: string;
-    projectsAt: string;
-    tech: {
-      title: string;
-      frontend: string;
-      backend: string;
-      blockchain: string;
-      tools: string;
-    };
-    downloadPdf: string;
-    generatingPdf: string;
-  }
-> = {
-  en: {
-    contacts: 'Contacts:',
-    languages: 'Languages:',
-    softSkills: 'Soft Skills:',
-    education: 'Education:',
-    workExperience: 'Work Experience:',
-    projectsAt: 'Projects at',
-    tech: {
-      title: 'Tech Skills:',
-      frontend: 'Frontend:',
-      backend: 'Backend:',
-      blockchain: 'Blockchain:',
-      tools: 'Tools:',
-    },
-    downloadPdf: 'Download PDF',
-    generatingPdf: 'Generating PDF...',
-  },
-  uk: {
-    contacts: 'Контакти:',
-    languages: 'Мови:',
-    softSkills: "М'які навички:",
-    education: 'Освіта:',
-    workExperience: 'Досвід роботи:',
-    projectsAt: 'Проєкти в',
-    tech: {
-      title: 'Технічні навички:',
-      frontend: 'Frontend:',
-      backend: 'Backend:',
-      blockchain: 'Blockchain:',
-      tools: 'Інструменти:',
-    },
-    downloadPdf: 'Завантажити PDF',
-    generatingPdf: 'Генерую PDF...',
-  },
-  pl: {
-    contacts: 'Kontakt:',
-    languages: 'Języki:',
-    softSkills: 'Umiejętności miękkie:',
-    education: 'Edukacja:',
-    workExperience: 'Doświadczenie zawodowe:',
-    projectsAt: 'Projekty w',
-    tech: {
-      title: 'Umiejętności techniczne:',
-      frontend: 'Frontend:',
-      backend: 'Backend:',
-      blockchain: 'Blockchain:',
-      tools: 'Narzędzia:',
-    },
-    downloadPdf: 'Pobierz PDF',
-    generatingPdf: 'Tworzenie PDF...',
-  },
-};
-
 type Props = {
-  resumeData: MyInfoByLocaleType;
+  resumeDocument: ResumeDocumentType;
 };
 
-function ResumePage({ resumeData }: Props) {
+function ResumePage({ resumeDocument }: Props) {
   const [locale, setLocale] = useState<Locale>('en');
   const resumeRef = useRef<HTMLDivElement>(null);
   const [isDownloadingPdf, setIsDownloadingPdf] = useState(false);
-  const currentInfo = resumeData[locale] ?? resumeData.en;
-  const uiText = UI_TEXT[locale];
+  const currentInfo = resumeDocument.content[locale] ?? resumeDocument.content.en;
+  const uiText = resumeDocument.uiText[locale] ?? resumeDocument.uiText.en;
 
   const handleDownloadPdf = async () => {
     if (!resumeRef.current || isDownloadingPdf) return;
@@ -240,4 +167,3 @@ function ResumePage({ resumeData }: Props) {
 }
 
 export default ResumePage;
-

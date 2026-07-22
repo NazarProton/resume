@@ -240,7 +240,8 @@ function ObjectField({
         <button
           type="button"
           onClick={() => {
-            const { [fieldKey]: _removed, ...rest } = parent;
+            const rest = { ...parent };
+            delete rest[fieldKey];
             onChange(rest);
           }}
           className="rounded bg-red-600 px-2 py-1 text-xs font-semibold text-white"
