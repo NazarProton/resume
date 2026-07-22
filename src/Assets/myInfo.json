@@ -95,14 +95,6 @@
     ],
     "experience": [
       {
-        "company": "Dream Watch",
-        "position": "Senior FullStack Developer & SEO Product Lead",
-        "description": "Worked as both developer and SEO product lead. Built a Swiss watches marketplace on Next.js 16+ with 20,000+ products, direct CRM integration, on-site payments, and a real-time admin panel for full content management. Organized the end-to-end delivery process: collected product and market information, planned and prioritized work, set tasks, and coordinated execution. Delivered translation flows via integrations, Railway deployment, and Cloudflare setup (DNS, SSL, caching, and security).",
-        "dates": "11/2025 - 02/2026",
-        "location": "Remote",
-        "link": "https://dream-watch.pl/"
-      },
-      {
         "company": "Eitherway AI",
         "position": "Senior Frontend Developer",
         "description": "Building an AI-powered platform that generates web projects from prompts, with rapid prototyping workflows and automated project setup. Implemented custom internal automation workflows for operations and content tasks to speed up delivery.",
@@ -111,10 +103,18 @@
         "link": "https://eitherway.ai/chat"
       },
       {
+        "company": "Dream Watch",
+        "position": "Senior FullStack Developer & SEO Product Lead",
+        "description": "Worked as both developer and SEO product lead. Built a Swiss watches marketplace on Next.js 16+ with 20,000+ products, direct CRM integration, on-site payments, and a real-time admin panel for full content management. Organized the end-to-end delivery process: collected product and market information, planned and prioritized work, set tasks, and coordinated execution. Delivered translation flows via integrations, Railway deployment, and Cloudflare setup (DNS, SSL, caching, and security).",
+        "dates": "11/2025 - Present",
+        "location": "Remote",
+        "link": "https://dream-watch.pl/"
+      },
+      {
         "company": "Bridge Labs",
         "position": "Senior FullStack Developer",
         "description": "Building a Web3 job marketplace connecting specialists with projects, including resume-based talent search and a comprehensive vetting system. Implementing rapid matching flows and success-tracking features for hiring teams.",
-        "dates": "07/2025 - Present",
+        "dates": "07/2025 - 05/2026",
         "location": "Remote",
         "link": "https://bridge-labs.io/"
       },
@@ -294,14 +294,6 @@
     ],
     "experience": [
       {
-        "company": "Dream Watch",
-        "position": "Senior FullStack розробник та SEO Product Lead",
-        "description": "Працював як розробник і SEO Product Lead. Розробив маркетплейс швейцарських годинників на Next.js 16+ з 20 000+ товарами, прямою інтеграцією з CRM, оплатою на сайті та адмінпанеллю в реальному часі для повного керування контентом. Організовував повний цикл розробки: збирав продуктову та ринкову інформацію, планував і пріоритезував роботу, ставив задачі та координував виконання. Реалізував потоки перекладів через інтеграції, розгортання на Railway та налаштування Cloudflare (DNS, SSL, кешування, безпека).",
-        "dates": "11/2025 - 02/2026",
-        "location": "Віддалено",
-        "link": "https://dream-watch.pl/"
-      },
-      {
         "company": "Eitherway AI",
         "position": "Senior Frontend розробник",
         "description": "Розробляю AI-платформу, яка генерує вебпроєкти з промптів, зі швидким процесом прототипування та автоматизованим стартом проєктів. Впровадив автоматизаційні сценарії на базі OpenClaw для операційних і контент-завдань, щоб прискорити розробку.",
@@ -310,10 +302,18 @@
         "link": "https://eitherway.ai/chat"
       },
       {
+        "company": "Dream Watch",
+        "position": "Senior FullStack розробник та SEO Product Lead",
+        "description": "Працював як розробник і SEO Product Lead. Розробив маркетплейс швейцарських годинників на Next.js 16+ з 20 000+ товарами, прямою інтеграцією з CRM, оплатою на сайті та адмінпанеллю в реальному часі для повного керування контентом. Організовував повний цикл розробки: збирав продуктову та ринкову інформацію, планував і пріоритезував роботу, ставив задачі та координував виконання. Реалізував потоки перекладів через інтеграції, розгортання на Railway та налаштування Cloudflare (DNS, SSL, кешування, безпека).",
+        "dates": "11/2025 - Дотепер",
+        "location": "Віддалено",
+        "link": "https://dream-watch.pl/"
+      },
+      {
         "company": "Bridge Labs",
         "position": "Senior FullStack розробник",
         "description": "Розробляю Web3-маркетплейс вакансій, що поєднує спеціалістів із проєктами, включно з пошуком талантів за резюме та комплексною системою верифікації. Впроваджую швидкі процеси матчінгу та відстеження ефективності для команд найму.",
-        "dates": "07/2025 - Дотепер",
+        "dates": "07/2025 - 05/2026",
         "location": "Віддалено",
         "link": "https://bridge-labs.io/"
       },
@@ -493,26 +493,26 @@
     ],
     "experience": [
       {
-        "company": "Dream Watch",
-        "position": "Senior FullStack Developer i SEO Product Lead",
-        "description": "Pracowalem jako developer i SEO product lead. Zbudowalem marketplace szwajcarskich zegarkow na Next.js 16+ z 20 000+ produktami, bezposrednia integracja z CRM, platnosciami na stronie i real-time panelem administracyjnym do pelnego zarzadzania trescia. Organizowalem end-to-end proces delivery: zbieralem informacje produktowe i rynkowe, planowalem i priorytetyzowalem prace, ustawialem zadania i koordynowalem wykonanie. Dostarczylem flow tlumaczen przez integracje, deployment na Railway oraz konfiguracje Cloudflare (DNS, SSL, cache i security).",
-        "dates": "11/2025 - 02/2026",
-        "location": "Zdalnie",
-        "link": "https://dream-watch.pl/"
-      },
-      {
         "company": "Eitherway AI",
         "position": "Senior Frontend Developer",
         "description": "Tworze platforme AI, ktora generuje projekty webowe z promptow, z szybkim workflow prototypowania i automatycznym uruchamianiem projektow. Wdrozylem wewnetrzne automation flow dla operacji i zadan contentowych, aby przyspieszyc delivery.",
-        "dates": "05/2025 - Present",
+        "dates": "05/2025 - Obecnie",
         "location": "Zdalnie",
         "link": "https://eitherway.ai/chat"
+      },
+      {
+        "company": "Dream Watch",
+        "position": "Senior FullStack Developer i SEO Product Lead",
+        "description": "Pracowalem jako developer i SEO product lead. Zbudowalem marketplace szwajcarskich zegarkow na Next.js 16+ z 20 000+ produktami, bezposrednia integracja z CRM, platnosciami na stronie i real-time panelem administracyjnym do pelnego zarzadzania trescia. Organizowalem end-to-end proces delivery: zbieralem informacje produktowe i rynkowe, planowalem i priorytetyzowalem prace, ustawialem zadania i koordynowalem wykonanie. Dostarczylem flow tlumaczen przez integracje, deployment na Railway oraz konfiguracje Cloudflare (DNS, SSL, cache i security).",
+        "dates": "11/2025 - Obecnie",
+        "location": "Zdalnie",
+        "link": "https://dream-watch.pl/"
       },
       {
         "company": "Bridge Labs",
         "position": "Senior FullStack Developer",
         "description": "Tworze marketplace ofert pracy Web3 laczacy specjalistow z projektami, w tym wyszukiwanie talentow na podstawie resume i kompleksowy system weryfikacji. Wdrazam szybkie flow dopasowania oraz mechanizmy tracking skutecznosci dla zespolow hiringowych.",
-        "dates": "07/2025 - Present",
+        "dates": "07/2025 - 05/2026",
         "location": "Zdalnie",
         "link": "https://bridge-labs.io/"
       },

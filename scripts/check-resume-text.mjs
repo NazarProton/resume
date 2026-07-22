@@ -20,6 +20,7 @@ const jsonFiles = [
 
 const mojibakeTokens = [
   '\\uFFFD',
+  '\\?{4,}',
   '\\u00C3\\u0080',
   '\\u00C3\\u0090',
   '\\u00C3\\u00A9',
@@ -60,6 +61,7 @@ const badSamples = [
   'РљРѕРЅС‚Р°РєС‚Рё:',
   'РњРѕРІРё:',
   'Р—Р°РІР°РЅС‚Р°Р¶РёС‚Рё PDF',
+  '05/2025 - ???????',
   'JД™zyki:',
   'UmiejД™tnoЕ›ci techniczne:',
 ];
