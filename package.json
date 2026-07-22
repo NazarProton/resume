@@ -4,9 +4,12 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npm test",
     "build": "next build",
     "start": "next start -p ${PORT:-3000}",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "node scripts/check-resume-text.mjs",
+    "validate": "npm run lint && npm run build"
   },
   "dependencies": {
     "html2canvas": "^1.4.1",
