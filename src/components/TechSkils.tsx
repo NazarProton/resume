@@ -1,6 +1,6 @@
 import { MyInfoType, ResumeUiText } from '../types';
 
-const GROUPS = ['frontend', 'backend', 'ai', 'blockchain', 'tools'] as const;
+const GROUPS = ['frontend', 'mobile', 'backend', 'ai', 'blockchain', 'tools'] as const;
 
 function TechSkills({ MyInfo, labels }: { MyInfo: MyInfoType; labels: ResumeUiText['tech'] }) {
   return (

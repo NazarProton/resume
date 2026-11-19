@@ -20,9 +20,11 @@ type EditTarget =
   | { kind: 'experience'; index: number; title: string };
 
 const LOCALES: Locale[] = ['en', 'uk', 'pl'];
+const TECH_GROUPS: TechGroup[] = ['frontend', 'mobile', 'backend', 'ai', 'blockchain', 'tools'];
 
 const TECH_LABELS: Record<TechGroup, string> = {
   frontend: 'Frontend',
+  mobile: 'Mobile & Telegram',
   backend: 'Backend',
   ai: 'AI & integrations',
   blockchain: 'Blockchain',
@@ -208,7 +210,7 @@ function AdminPage({ resumeDocument }: Props) {
 
             <Panel title="Tech Skills">
               <div className="grid gap-3 md:grid-cols-2">
-                {(Object.keys(preview.techSkills) as TechGroup[]).map((group) => (
+                {TECH_GROUPS.map((group) => (
                   <SectionCard
                     key={group}
                     title={TECH_LABELS[group]}
@@ -531,6 +533,11 @@ function renderFields(
           label="Frontend label"
           value={uiText.tech.frontend}
           onChange={(value) => updateUiLocale(locale, (item) => { item.tech.frontend = value; })}
+        />
+        <TextInput
+          label="Mobile label"
+          value={uiText.tech.mobile}
+          onChange={(value) => updateUiLocale(locale, (item) => { item.tech.mobile = value; })}
         />
         <TextInput
           label="Backend label"
