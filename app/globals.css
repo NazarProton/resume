@@ -17,6 +17,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #217e91; outline-offs
 .resume-pdf:hover { background: #215c70; }
 .resume-document { background: white; padding: 48px; border-top: 5px solid #226777; box-shadow: 0 12px 45px #233b4a12; font-size: 14px; line-height: 1.55; }
 .resume-header { display: flex; justify-content: space-between; gap: 28px; align-items: flex-start; }
+.resume-header > div { min-width: 0; flex: 1; }
 .resume-header h1 { font-size: 42px; line-height: 1.1; font-weight: 700; letter-spacing: -1.5px; margin: 0 0 9px; color: #173d4b; }
 .resume-title { font-size: 22px; font-weight: 600; margin: 0 0 4px; }
 .resume-focus { font-size: 13px; color: #52717e; margin: 0 0 17px; }
@@ -24,7 +25,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #217e91; outline-offs
 .resume-social-list { margin-top: 5px; color: #246375; }
 .resume-document a { text-decoration-thickness: 1px; text-underline-offset: 3px; overflow-wrap: anywhere; }
 .resume-document a:hover { text-decoration: underline; }
-.resume-photo { flex-shrink: 0; width: 116px; height: 116px; object-fit: cover; border-radius: 50%; }
+.resume-photo { flex-shrink: 0; width: 120px; height: 180px; object-fit: cover; object-position: center; border-radius: 4px; }
 .resume-summary { font-size: 15px; margin: 25px 0 30px; padding-bottom: 26px; border-bottom: 1px solid #d9e3e9; }
 .resume-body { display: grid; grid-template-columns: minmax(0, 1fr) 266px; gap: 42px; }
 .resume-document h2 { color: #226777; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.6px; margin: 0 0 17px; }
@@ -53,7 +54,7 @@ button:focus-visible, a:focus-visible { outline: 3px solid #217e91; outline-offs
   .resume-header { gap: 16px; }
   .resume-header h1 { font-size: 34px; }
   .resume-title { font-size: 18px; }
-  .resume-photo { width: 76px; height: 76px; }
+  .resume-photo { width: 92px; height: 138px; }
   .resume-body { display: flex; flex-direction: column; gap: 30px; }
   .resume-skill-groups, .resume-support { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; }
   .resume-sidebar { font-size: 13px; }
@@ -61,18 +62,20 @@ button:focus-visible, a:focus-visible { outline: 3px solid #217e91; outline-offs
 @media (max-width: 430px) {
   .resume-document { padding: 24px 20px; }
   .resume-header h1 { font-size: 31px; }
-  .resume-header { display: block; }
-  .resume-photo { display: none; }
+  .resume-header { display: flex; gap: 12px; align-items: flex-start; }
+  .resume-photo { display: block; width: 72px; height: 108px; }
   .resume-skill-groups, .resume-support { grid-template-columns: 1fr; }
 }
 
 @page { size: A4; margin: 10mm 12mm; }
 @media print {
   body { background: white; color: #172c3c; }
-  .resume-toolbar, .resume-photo, .resume-strengths { display: none !important; }
+  .resume-toolbar, .resume-strengths { display: none !important; }
   .resume-shell { max-width: none; padding: 0; margin: 0; }
   .resume-document { zoom: .93; width: 100%; padding: 0; border: 0; box-shadow: none; font-size: 9.5pt; line-height: 1.35; }
-  .resume-header { display: block; }
+  .resume-header { display: flex; gap: 14pt; align-items: flex-start; }
+  .resume-header > div { flex: 1; min-width: 0; }
+  .resume-photo { display: block; width: 25mm; height: 37.5mm; border-radius: 1mm; }
   .resume-header h1 { font-size: 29pt; letter-spacing: -0.7pt; margin-bottom: 5pt; }
   .resume-title { font-size: 14pt; margin-bottom: 2pt; }
   .resume-focus { font-size: 9pt; margin-bottom: 8pt; }
