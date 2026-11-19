@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Proton Nazar DEV',
-  description: 'Personal resume with admin editor',
+  title: 'Nazar Proton | Senior Full-Stack Developer',
+  description: 'TypeScript, React, Next.js and Node.js. Full-stack development, AI interfaces, e-commerce, Web3 and production delivery.',
 };
 
 export default function RootLayout({
@@ -15,10 +15,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" type="image/svg+xml" href="/protonLogo.svg" />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-        />
       </head>
       <body>{children}</body>
     </html>

@@ -10,6 +10,9 @@ const filesToScan = [
   'src/lib/resumeStore.ts',
   'src/views/ResumePage.tsx',
   'src/views/AdminPage.tsx',
+  'src/components/WorkExpetience.tsx',
+  'src/components/TechSkils.tsx',
+  'app/layout.tsx',
 ].map((file) => resolve(root, file));
 
 const jsonFiles = [
@@ -106,13 +109,23 @@ function validateLocaleText(file, value) {
 
   const plText = JSON.stringify(content.pl);
   assert(!/[РС][Ѐ-ӿ]/u.test(plText), `${file}: pl locale contains Cyrillic-looking mojibake`);
+  assert(!/[А-Яа-яІіЇїЄєҐґ]/u.test(plText), `${file}: pl locale contains untranslated Cyrillic text`);
+  assert(!/[А-Яа-яІіЇїЄєҐґ]/u.test(JSON.stringify(content.en)), `${file}: en locale contains untranslated Cyrillic text`);
+  const companies = content.en.experience.map((job) => job.company);
+  for (const locale of ['en', 'uk', 'pl']) {
+    assert(JSON.stringify(content[locale].experience.map((job) => job.company)) === JSON.stringify(companies), `${file}: ${locale} work history differs from English`);
+    for (const [group, skills] of Object.entries(content[locale].techSkills)) {
+      assert(skills.length > 0, `${file}: ${locale}.${group} is empty`);
+      assert(new Set(skills).size === skills.length, `${file}: ${locale}.${group} has duplicate skills`);
+    }
+  }
 }
 
 function scanTextFiles() {
   const failures = [];
 
   for (const file of filesToScan) {
-    const text = readFileSync(file, 'utf8');
+    const text = new TextDecoder('utf-8', { fatal: true }).decode(readFileSync(file));
     const matches = findMojibake(text);
     if (matches.length > 0) {
       failures.push(`${relative(root, file)}: suspicious mojibake patterns ${matches.join(', ')}`);
@@ -139,6 +152,12 @@ function scanJsonFiles() {
 }
 
 validateDetector();
+
+const copies = jsonFiles.map((file) => {
+  const data = JSON.parse(readFileSync(file, 'utf8'));
+  return JSON.stringify(data.content ?? data);
+});
+assert(copies.every((value) => value === copies[0]), 'Resume content copies have drifted');
 
 const failures = [...scanTextFiles(), ...scanJsonFiles()];
 
