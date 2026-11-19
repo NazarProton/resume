@@ -54,7 +54,7 @@ function ResumePage({ resumeDocument }: { resumeDocument: ResumeDocumentType }) 
             </ul>
           </div>
           <Image className="resume-photo" src={myPhoto} alt={info.profile.name}
-            width={116} height={116} priority />
+            width={900} height={1350} priority />
         </header>
         <p className="resume-summary">{info.profile.description}</p>
         <div className="resume-body">
