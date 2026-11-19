@@ -10,6 +10,7 @@ export type ResumeUiText = {
   tech: {
     title: string;
     frontend: string;
+    mobile: string;
     backend: string;
     ai: string;
     blockchain: string;
@@ -44,6 +45,7 @@ export type MyInfoType = {
   }>;
   techSkills: {
     frontend: string[];
+    mobile?: string[];
     backend: string[];
     ai?: string[];
     blockchain: string[];

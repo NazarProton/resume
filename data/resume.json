@@ -3,8 +3,8 @@
     "profile": {
       "name": "Nazar Proton",
       "title": "Senior Full-Stack Developer",
-      "focus": "TypeScript, React & Node.js | AI, E-commerce & Web3",
-      "description": "Full-stack developer with 5+ years of experience delivering web products from architecture and API design to deployment and production support. Build multilingual marketplaces, AI agent interfaces and business integrations. Combine hands-on engineering with product planning, technical SEO, performance optimization and ownership of delivery."
+      "focus": "React Native & iOS · Telegram Mini Apps · Technical SEO · Web3",
+      "description": "Full-stack developer with 5+ years shipping web and mobile products from UI and APIs through production. Recent work includes React Native apps for iOS, Telegram Mini Apps and bots, and a multilingual commerce platform with 20,000+ products. Lead technical SEO across Dream Watch and WWT/WT products, combining product planning with hands-on delivery. Web3 experience spans NFT marketplaces, wallet authentication, smart-contract staking and token flows, plus Bitcoin PSBT. Core stack: TypeScript, React/Next.js, Node/NestJS, SQL, Railway and Cloudflare."
     },
     "contacts": {
       "location": "Warsaw, Poland",
@@ -40,7 +40,6 @@
         "Next.js / App Router",
         "SSR / SSG",
         "Vue.js / Nuxt.js",
-        "React Native",
         "Zustand / Redux Toolkit",
         "Tailwind CSS",
         "HTML / CSS",
@@ -68,7 +67,6 @@
         "Streaming chat",
         "Workflow automation",
         "OpenClaw",
-        "Telegram bots",
         "CRM / payment integrations"
       ],
       "blockchain": [
@@ -76,10 +74,16 @@
         "Wagmi",
         "WalletConnect / Reown",
         "MetaMask",
+        "Wallet authentication",
+        "NFT marketplaces",
+        "Smart contract integrations",
+        "Staking / minting / redemption",
         "Bitcoin / PSBT",
         "Sats Connect / UniSat"
       ],
       "tools": [
+        "Technical SEO",
+        "E-commerce SEO",
         "Railway",
         "Cloudflare",
         "Vercel",
@@ -88,9 +92,14 @@
         "Jest / node:test",
         "Sentry",
         "Swagger / Postman",
-        "Technical SEO",
         "Caching / CDN",
         "Figma / Jira / Bitbucket"
+      ],
+      "mobile": [
+        "React Native",
+        "React Native for iOS",
+        "Telegram Mini Apps",
+        "Telegram bots"
       ]
     },
     "softSkills": [
@@ -105,7 +114,7 @@
       {
         "company": "Dream Watch",
         "position": "Senior Full-Stack Developer & SEO Product Lead",
-        "description": "Delivered a multilingual marketplace for 20,000+ products with Next.js, React, NestJS and MySQL/TypeORM, including storefront and content administration.\nIntegrated Zoho CRM, payment flows and Telegram notifications; built scheduled request delivery and reconciliation workflows.\nDeveloped search and activity dashboards, Meilisearch integration, product imports and image tooling. Improved technical SEO, caching, request protection and regression checks; managed Railway deployments and Cloudflare configuration.\nOwned product research, prioritization, task planning and coordination alongside implementation.",
+        "description": "Deliver a multilingual commerce platform with 20,000+ products, building the storefront and content administration with Next.js, React, NestJS and MySQL/TypeORM.\nLead technical SEO across Dream Watch and WWT/WT products, pairing product improvements with performance, caching and request protection.\nIntegrate Zoho CRM, payment flows and Telegram notifications; build scheduled lead delivery and reconciliation, Meilisearch search, operations dashboards, product imports and image tooling.\nOwn product discovery, prioritization, delivery planning, regression checks and production operations on Railway and Cloudflare.",
         "dates": "11/2025 - Present",
         "location": "Remote",
         "link": "https://dream-watch.pl/"
@@ -113,7 +122,7 @@
       {
         "company": "Eitherway AI",
         "position": "Senior Frontend Developer",
-        "description": "Developed the frontend of an AI platform that turns prompts into deployable web projects, including agent execution interfaces and streaming chat.\nImplemented plugin and monetization flows, Google and Web3 wallet authentication, and internal automation for operations and content workflows.",
+        "description": "Build the frontend of an AI platform that turns prompts into deployable web projects, including agent execution interfaces, streaming chat, plugins and monetization flows. Implement Google and Web3 wallet authentication, plus automation for operations and content workflows.",
         "dates": "05/2025 - Present",
         "location": "Remote",
         "link": "https://eitherway.ai/chat"
@@ -121,7 +130,7 @@
       {
         "company": "Bridge Labs",
         "position": "Senior Full-Stack Developer",
-        "description": "Built a Web3 recruitment marketplace connecting specialists with projects. Implemented resume-based talent discovery, candidate vetting, matching workflows and hiring progress tracking.",
+        "description": "Built a Web3 recruitment marketplace connecting specialists with projects. Delivered resume-based talent discovery, candidate vetting, project matching and hiring pipeline tracking.",
         "dates": "07/2025 - 05/2026",
         "location": "Remote",
         "link": "https://bridge-labs.io/"
@@ -129,7 +138,7 @@
       {
         "company": "GiftsBattle",
         "position": "Senior Full-Stack Developer",
-        "description": "Developed a Telegram mini app and companion website for a gaming platform. Optimized rendering, animations and interface responsiveness, improving performance across core user flows.",
+        "description": "Built a Telegram Mini App and companion website for a gaming platform. Improved rendering, animation and responsiveness across core user flows.",
         "dates": "04/2025 - 08/2025",
         "location": "Remote",
         "link": "https://giftsbattle.com/"
@@ -159,7 +168,7 @@
       {
         "company": "Ordeez.io",
         "position": "Senior Full-Stack Developer",
-        "description": "Built an NFT marketplace as the sole developer, covering migration, trading and analytics. Collaborated with designers on interactive interfaces and complex visual effects.",
+        "description": "Built an NFT marketplace as the sole developer, delivering migration, trading and analytics features. Partnered with designers on interactive interfaces and complex visual effects.",
         "dates": "02/2024 - 04/2025",
         "location": "Croatia, Remote",
         "link": "https://ordeez.io/"
@@ -169,13 +178,13 @@
         "position": "Senior Frontend & Full-Stack Developer",
         "dates": "10/2023 - 10/2024",
         "location": "Ukraine, Remote",
-        "description": "Worked across frontend, full-stack and React Native projects for enterprise clients, including security, investment and internal business applications. Delivered features and maintained application performance.",
+        "description": "Contributed to frontend, full-stack and React Native applications for enterprise clients in security, investment and internal business systems. Delivered product features and maintained application performance.",
         "link": "https://capgemini-engineering.com.ua/"
       },
       {
         "company": "Zoinks Hedge Crypto",
         "position": "Frontend Developer · React & Web3",
-        "description": "Built two versions of a crypto fund website and interactive dashboards. Integrated smart contract flows for staking, minting and redemption, with interfaces for managing contract interactions.",
+        "description": "Built two versions of a crypto fund website and interactive dashboards. Integrated smart-contract flows for staking, minting and redemption, and built interfaces for contract interactions.",
         "dates": "02/2022 - 07/2023",
         "location": "Canada, Remote"
       },
@@ -210,8 +219,8 @@
     "profile": {
       "name": "Назар Протон",
       "title": "Senior Full-Stack розробник",
-      "focus": "TypeScript, React та Node.js | AI, E-commerce та Web3",
-      "description": "Full-Stack розробник із понад 5 роками досвіду створення вебпродуктів: від архітектури й API до розгортання та підтримки в продакшні. Розробляю багатомовні маркетплейси, інтерфейси AI-агентів та бізнес-інтеграції. Поєдную розробку з продуктовим плануванням, технічним SEO, оптимізацією швидкодії та відповідальністю за випуск продукту."
+      "focus": "React Native та iOS · Telegram Mini Apps · технічне SEO · Web3",
+      "description": "Full-Stack розробник із понад 5 роками досвіду запуску веб- і мобільних продуктів — від інтерфейсу та API до продакшену. Останні проєкти охоплюють React Native-застосунки для iOS, Telegram Mini Apps і ботів, а також багатомовну e-commerce платформу з понад 20 000 товарів. Веду технічне SEO продуктів Dream Watch і WWT/WT, поєднуючи продуктове планування з розробкою. Досвід Web3: NFT-маркетплейси, авторизація через гаманці, смартконтрактні сценарії стейкінгу й операцій із токенами та Bitcoin PSBT. Основний стек: TypeScript, React/Next.js, Node/NestJS, SQL, Railway і Cloudflare."
     },
     "contacts": {
       "location": "Варшава, Польща",
@@ -247,7 +256,6 @@
         "Next.js / App Router",
         "SSR / SSG",
         "Vue.js / Nuxt.js",
-        "React Native",
         "Zustand / Redux Toolkit",
         "Tailwind CSS",
         "HTML / CSS",
@@ -275,7 +283,6 @@
         "Потоковий чат",
         "Автоматизація процесів",
         "OpenClaw",
-        "Telegram-боти",
         "Інтеграції CRM та платежів"
       ],
       "blockchain": [
@@ -283,10 +290,16 @@
         "Wagmi",
         "WalletConnect / Reown",
         "MetaMask",
+        "Авторизація через гаманці",
+        "NFT-маркетплейси",
+        "Інтеграції зі смартконтрактами",
+        "Стейкінг / випуск / погашення токенів",
         "Bitcoin / PSBT",
         "Sats Connect / UniSat"
       ],
       "tools": [
+        "Технічне SEO",
+        "SEO для e-commerce",
         "Railway",
         "Cloudflare",
         "Vercel",
@@ -295,9 +308,14 @@
         "Jest / node:test",
         "Sentry",
         "Swagger / Postman",
-        "Technical SEO",
-        "Caching / CDN",
+        "Кешування / CDN",
         "Figma / Jira / Bitbucket"
+      ],
+      "mobile": [
+        "React Native",
+        "React Native для iOS",
+        "Telegram Mini Apps",
+        "Telegram-боти"
       ]
     },
     "softSkills": [
@@ -312,7 +330,7 @@
       {
         "company": "Dream Watch",
         "position": "Senior Full-Stack розробник та SEO Product Lead",
-        "description": "Розробив багатомовний маркетплейс із понад 20 000 товарами на Next.js, React, NestJS і MySQL/TypeORM, включно з вітриною та керуванням контентом.\nІнтегрував Zoho CRM, платіжні сценарії та сповіщення в Telegram; реалізував відкладене передавання заявок і звіряння даних.\nСтворив панелі аналітики пошуку й активності, інтеграцію Meilisearch, імпорт товарів та інструменти обробки зображень. Удосконалив технічне SEO, кешування, захист запитів і регресійні перевірки; керував розгортанням на Railway та налаштуваннями Cloudflare.\nПаралельно з розробкою відповідав за дослідження продукту, пріоритети, планування завдань і координацію роботи.",
+        "description": "Розвиваю багатомовну e-commerce платформу з каталогом понад 20 000 товарів: вітрина й адміністрування контенту на Next.js, React, NestJS і MySQL/TypeORM.\nВеду технічне SEO продуктів Dream Watch і WWT/WT, поєднуючи продуктові покращення зі швидкодією, кешуванням і захистом запитів.\nІнтегрую Zoho CRM, платіжні сценарії та сповіщення в Telegram; реалізую відкладене передавання й звіряння заявок, пошук на Meilisearch, операційні панелі, імпорт товарів та інструменти для зображень.\nВідповідаю за дослідження продукту, пріоритети, планування релізів, регресійні перевірки та продакшен на Railway і Cloudflare.",
         "dates": "11/2025 - Дотепер",
         "location": "Віддалено",
         "link": "https://dream-watch.pl/"
@@ -320,7 +338,7 @@
       {
         "company": "Eitherway AI",
         "position": "Senior Frontend розробник",
-        "description": "Розробляв frontend AI-платформи, що перетворює промпти на готові до розгортання вебпроєкти, включно з інтерфейсами виконання завдань агентами та потоковим чатом.\nРеалізував сценарії роботи з плагінами й монетизацією, авторизацію через Google і Web3-гаманці та внутрішні автоматизації для операційних і контентних процесів.",
+        "description": "Розвиваю frontend AI-платформи, що перетворює промпти на готові до розгортання вебпроєкти: інтерфейси виконання завдань агентами, потоковий чат, плагіни й монетизацію. Реалізую авторизацію через Google і Web3-гаманці та автоматизацію операційних і контентних процесів.",
         "dates": "05/2025 - Дотепер",
         "location": "Віддалено",
         "link": "https://eitherway.ai/chat"
@@ -328,7 +346,7 @@
       {
         "company": "Bridge Labs",
         "position": "Senior Full-Stack розробник",
-        "description": "Розробляв Web3-платформу найму, що поєднує спеціалістів із проєктами. Реалізував пошук кандидатів за резюме, перевірку кандидатів, підбір і відстеження етапів найму.",
+        "description": "Розробив Web3-платформу найму, що поєднує спеціалістів із проєктами. Реалізував пошук кандидатів за резюме, перевірку, підбір проєктів і відстеження етапів найму.",
         "dates": "07/2025 - 05/2026",
         "location": "Віддалено",
         "link": "https://bridge-labs.io/"
@@ -336,7 +354,7 @@
       {
         "company": "GiftsBattle",
         "position": "Senior Full-Stack розробник",
-        "description": "Розробляв Telegram mini app та вебсайт ігрової платформи. Оптимізував відображення, анімації та швидкодію інтерфейсу в основних користувацьких сценаріях.",
+        "description": "Розробив Telegram Mini App і вебсайт ігрової платформи. Оптимізував відображення, анімації та адаптивність у ключових користувацьких сценаріях.",
         "dates": "04/2025 - 08/2025",
         "location": "Віддалено",
         "link": "https://giftsbattle.com/"
@@ -366,7 +384,7 @@
       {
         "company": "Ordeez.io",
         "position": "Senior Full-Stack розробник",
-        "description": "Самостійно розробив NFT-маркетплейс із міграцією, торгівлею та аналітикою. Співпрацював із дизайнерами над інтерактивними інтерфейсами й складними візуальними ефектами.",
+        "description": "Самостійно розробив NFT-маркетплейс, реалізувавши міграцію, торгівлю й аналітику. Співпрацював із дизайнерами над інтерактивними інтерфейсами та складними візуальними ефектами.",
         "dates": "02/2024 - 04/2025",
         "location": "Хорватія, Віддалено",
         "link": "https://ordeez.io/"
@@ -376,13 +394,13 @@
         "position": "Senior Frontend та Full-Stack розробник",
         "dates": "10/2023 - 10/2024",
         "location": "Україна, Віддалено",
-        "description": "Працював над frontend, Full-Stack і React Native проєктами для корпоративних клієнтів у сферах безпеки, інвестицій та внутрішніх бізнес-застосунків. Реалізовував функціональність і підтримував швидкодію застосунків.",
+        "description": "Працював над frontend-, full-stack- і React Native-застосунками для корпоративних клієнтів у сферах безпеки, інвестицій та внутрішніх бізнес-систем. Реалізовував функціональність і підтримував швидкодію застосунків.",
         "link": "https://capgemini-engineering.com.ua/"
       },
       {
         "company": "Zoinks Hedge Crypto",
         "position": "Frontend-розробник · React та Web3",
-        "description": "Розробив дві версії вебсайту криптофонду та інтерактивні панелі. Інтегрував смартконтракти для стейкінгу, випуску й погашення токенів та створив інтерфейси взаємодії з контрактами.",
+        "description": "Розробив дві версії вебсайту криптофонду та інтерактивні панелі. Інтегрував смартконтрактні сценарії стейкінгу, випуску й погашення токенів та створив інтерфейси взаємодії з контрактами.",
         "dates": "02/2022 - 07/2023",
         "location": "Канада, Віддалено"
       },
@@ -417,8 +435,8 @@
     "profile": {
       "name": "Nazar Proton",
       "title": "Senior Full-Stack Developer",
-      "focus": "TypeScript, React i Node.js | AI, E-commerce i Web3",
-      "description": "Programista Full-Stack z ponad 5-letnim doświadczeniem w tworzeniu produktów internetowych: od architektury i API po wdrożenie i utrzymanie. Tworzę wielojęzyczne platformy handlowe, interfejsy agentów AI oraz integracje biznesowe. Łączę pracę programistyczną z planowaniem produktu, technicznym SEO, optymalizacją wydajności i odpowiedzialnością za realizację."
+      "focus": "React Native i iOS · Telegram Mini Apps · SEO techniczne · Web3",
+      "description": "Programista Full-Stack z ponad 5-letnim doświadczeniem w dostarczaniu produktów webowych i mobilnych — od interfejsu i API po produkcyjne wdrożenie. Ostatnie projekty obejmują aplikacje React Native na iOS, Telegram Mini Apps i boty oraz wielojęzyczną platformę e-commerce z katalogiem ponad 20 000 produktów. Prowadzę techniczne SEO produktów Dream Watch i WWT/WT, łącząc planowanie produktu z implementacją. Doświadczenie Web3 obejmuje marketplace’y NFT, uwierzytelnianie portfelami, integracje smart kontraktów dla stakingu i operacji na tokenach, a także Bitcoin PSBT. Główny stack: TypeScript, React/Next.js, Node/NestJS, SQL, Railway i Cloudflare."
     },
     "contacts": {
       "location": "Warszawa, Polska",
@@ -454,7 +472,6 @@
         "Next.js / App Router",
         "SSR / SSG",
         "Vue.js / Nuxt.js",
-        "React Native",
         "Zustand / Redux Toolkit",
         "Tailwind CSS",
         "HTML / CSS",
@@ -482,7 +499,6 @@
         "Czat strumieniowy",
         "Automatyzacja procesów",
         "OpenClaw",
-        "Boty Telegram",
         "Integracje CRM i płatności"
       ],
       "blockchain": [
@@ -490,10 +506,16 @@
         "Wagmi",
         "WalletConnect / Reown",
         "MetaMask",
+        "Uwierzytelnianie portfelem",
+        "Marketplace’y NFT",
+        "Integracje smart kontraktów",
+        "Staking / emisja / umarzanie tokenów",
         "Bitcoin / PSBT",
         "Sats Connect / UniSat"
       ],
       "tools": [
+        "SEO techniczne",
+        "SEO e-commerce",
         "Railway",
         "Cloudflare",
         "Vercel",
@@ -502,9 +524,14 @@
         "Jest / node:test",
         "Sentry",
         "Swagger / Postman",
-        "Technical SEO",
-        "Caching / CDN",
+        "Cache / CDN",
         "Figma / Jira / Bitbucket"
+      ],
+      "mobile": [
+        "React Native",
+        "React Native na iOS",
+        "Telegram Mini Apps",
+        "Boty Telegram"
       ]
     },
     "softSkills": [
@@ -519,7 +546,7 @@
       {
         "company": "Dream Watch",
         "position": "Senior Full-Stack Developer i SEO Product Lead",
-        "description": "Stworzyłem wielojęzyczny marketplace z ponad 20 000 produktów, oparty na Next.js, React, NestJS i MySQL/TypeORM, wraz z witryną sklepu i panelem zarządzania treścią.\nZintegrowałem Zoho CRM, płatności i powiadomienia Telegram; wdrożyłem harmonogram przekazywania zgłoszeń i uzgadnianie danych.\nZbudowałem panele analityki wyszukiwania i aktywności, integrację Meilisearch, import produktów i narzędzia do obrazów. Usprawniłem techniczne SEO, pamięć podręczną, ochronę żądań i testy regresji; zarządzałem wdrożeniami Railway i konfiguracją Cloudflare.\nOdpowiadałem również za analizę produktu, priorytetyzację, planowanie zadań i koordynację prac.",
+        "description": "Rozwijam wielojęzyczną platformę e-commerce z katalogiem ponad 20 000 produktów: witrynę sklepu i panel zarządzania treścią w Next.js, React, NestJS i MySQL/TypeORM.\nProwadzę techniczne SEO produktów Dream Watch i WWT/WT, łącząc rozwój produktu z wydajnością, cache i ochroną żądań.\nIntegruję Zoho CRM, płatności i powiadomienia Telegram; tworzę harmonogram przekazywania i uzgadniania zgłoszeń, wyszukiwanie Meilisearch, panele operacyjne, import produktów i narzędzia do obrazów.\nOdpowiadam za analizę produktu, priorytety, planowanie wydań, testy regresji i środowisko produkcyjne na Railway i Cloudflare.",
         "dates": "11/2025 - Obecnie",
         "location": "Zdalnie",
         "link": "https://dream-watch.pl/"
@@ -527,7 +554,7 @@
       {
         "company": "Eitherway AI",
         "position": "Senior Frontend Developer",
-        "description": "Rozwijałem frontend platformy AI przekształcającej prompty w aplikacje gotowe do wdrożenia, w tym interfejsy wykonywania zadań przez agentów i czat strumieniowy.\nWdrożyłem obsługę wtyczek i monetyzacji, uwierzytelnianie przez Google i portfele Web3 oraz automatyzacje procesów operacyjnych i treści.",
+        "description": "Rozwijam frontend platformy AI, która przekształca prompty w aplikacje gotowe do wdrożenia: interfejsy agentów, czat strumieniowy, wtyczki i monetyzację. Wdrażam logowanie przez Google i portfele Web3 oraz automatyzacje procesów operacyjnych i treści.",
         "dates": "05/2025 - Obecnie",
         "location": "Zdalnie",
         "link": "https://eitherway.ai/chat"
@@ -535,7 +562,7 @@
       {
         "company": "Bridge Labs",
         "position": "Senior Full-Stack Developer",
-        "description": "Rozwijałem platformę rekrutacyjną Web3 łączącą specjalistów z projektami. Wdrożyłem wyszukiwanie talentów na podstawie CV, weryfikację kandydatów, dopasowywanie i śledzenie etapów rekrutacji.",
+        "description": "Zbudowałem platformę rekrutacyjną Web3 łączącą specjalistów z projektami. Wdrożyłem wyszukiwanie na podstawie CV, weryfikację kandydatów, dopasowywanie projektów i śledzenie etapów rekrutacji.",
         "dates": "07/2025 - 05/2026",
         "location": "Zdalnie",
         "link": "https://bridge-labs.io/"
@@ -543,7 +570,7 @@
       {
         "company": "GiftsBattle",
         "position": "Senior Full-Stack Developer",
-        "description": "Rozwijałem Telegram mini app i witrynę platformy gamingowej. Optymalizowałem renderowanie, animacje i responsywność interfejsu w kluczowych ścieżkach użytkownika.",
+        "description": "Zbudowałem Telegram Mini App i stronę platformy gamingowej. Usprawniłem renderowanie, animacje i responsywność w kluczowych ścieżkach użytkownika.",
         "dates": "04/2025 - 08/2025",
         "location": "Zdalnie",
         "link": "https://giftsbattle.com/"
@@ -573,7 +600,7 @@
       {
         "company": "Ordeez.io",
         "position": "Senior Full-Stack Developer",
-        "description": "Samodzielnie zbudowałem marketplace NFT z migracją, handlem i analityką. Współpracowałem z projektantami nad interaktywnymi interfejsami i złożonymi efektami wizualnymi.",
+        "description": "Samodzielnie zbudowałem marketplace NFT, realizując migrację, funkcje handlowe i analitykę. Współpracowałem z projektantami nad interaktywnymi interfejsami i złożonymi efektami wizualnymi.",
         "dates": "02/2024 - 04/2025",
         "location": "Chorwacja, Zdalnie",
         "link": "https://ordeez.io/"
@@ -583,13 +610,13 @@
         "position": "Senior Frontend i Full-Stack Developer",
         "dates": "10/2023 - 10/2024",
         "location": "Ukraina, Zdalnie",
-        "description": "Pracowałem przy projektach frontend, Full-Stack i React Native dla klientów korporacyjnych, obejmujących bezpieczeństwo, inwestycje i wewnętrzne aplikacje biznesowe. Dostarczałem funkcje i dbałem o wydajność aplikacji.",
+        "description": "Pracowałem nad aplikacjami frontendowymi, full-stack i React Native dla klientów korporacyjnych z obszarów bezpieczeństwa, inwestycji i wewnętrznych systemów biznesowych. Dostarczałem funkcje i dbałem o wydajność aplikacji.",
         "link": "https://capgemini-engineering.com.ua/"
       },
       {
         "company": "Zoinks Hedge Crypto",
         "position": "Frontend Developer · React i Web3",
-        "description": "Zbudowałem dwie wersje strony funduszu kryptowalutowego i interaktywne panele. Zintegrowałem smart kontrakty do stakingu, emisji i umarzania tokenów oraz interfejsy obsługi kontraktów.",
+        "description": "Zbudowałem dwie wersje strony funduszu kryptowalutowego i interaktywne panele. Zintegrowałem smart kontrakty do stakingu, emisji i umarzania tokenów oraz stworzyłem interfejsy do obsługi kontraktów.",
         "dates": "02/2022 - 07/2023",
         "location": "Kanada, Zdalnie"
       },
