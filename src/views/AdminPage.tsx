@@ -24,6 +24,7 @@ const LOCALES: Locale[] = ['en', 'uk', 'pl'];
 const TECH_LABELS: Record<TechGroup, string> = {
   frontend: 'Frontend',
   backend: 'Backend',
+  ai: 'AI & integrations',
   blockchain: 'Blockchain',
   tools: 'Tools',
 };
@@ -220,7 +221,7 @@ function AdminPage({ resumeDocument }: Props) {
                       })
                     }
                   >
-                    <TagList items={preview.techSkills[group]} />
+                    <TagList items={preview.techSkills[group] ?? []} />
                   </SectionCard>
                 ))}
               </div>
@@ -542,6 +543,11 @@ function renderFields(
           onChange={(value) => updateUiLocale(locale, (item) => { item.tech.blockchain = value; })}
         />
         <TextInput
+          label="AI & integrations label"
+          value={uiText.tech.ai}
+          onChange={(value) => updateUiLocale(locale, (item) => { item.tech.ai = value; })}
+        />
+        <TextInput
           label="Tools label"
           value={uiText.tech.tools}
           onChange={(value) => updateUiLocale(locale, (item) => { item.tech.tools = value; })}
@@ -580,6 +586,11 @@ function renderFields(
           onChange={(value) =>
             updateLocale(locale, (item) => { item.profile.description = value; })
           }
+        />
+        <TextInput
+          label="Focus / specializations"
+          value={info.profile.focus ?? ''}
+          onChange={(value) => updateLocale(locale, (item) => { item.profile.focus = value; })}
         />
       </>
     );
@@ -646,7 +657,7 @@ function renderFields(
     return (
       <TextArea
         label={`${TECH_LABELS[target.group]} skills - one per line`}
-        value={info.techSkills[target.group].join('\n')}
+        value={(info.techSkills[target.group] ?? []).join('\n')}
         rows={16}
         onChange={(value) =>
           updateLocale(locale, (item) => { item.techSkills[target.group] = linesToList(value); })

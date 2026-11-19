@@ -17,7 +17,7 @@ module.exports = {
         violet: '#3B3A67',
       },
       fontFamily: {
-        play: ['Play'],
+        play: ['Arial', 'Helvetica', 'sans-serif'],
         orbit: ['Orbitron'],
       },
       screens: {

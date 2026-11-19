@@ -1,9 +1,10 @@
 {
   "en": {
     "profile": {
-      "name": "Proton Nazar",
-      "title": "Senior FullStack JavaScript Developer (AI, Web3, E-commerce)",
-      "description": "I'm a Senior FullStack Developer with 5+ years of experience building production web products across AI, Web3, and e-commerce. I focus on fast delivery, reliable architecture, and clear communication in distributed teams. I enjoy taking ownership of complex features end-to-end and turning product ideas into scalable, user-focused solutions."
+      "name": "Nazar Proton",
+      "title": "Senior Full-Stack Developer",
+      "focus": "TypeScript, React & Node.js | AI, E-commerce & Web3",
+      "description": "Full-stack developer with 5+ years of experience delivering web products from architecture and API design to deployment and production support. Build multilingual marketplaces, AI agent interfaces and business integrations. Combine hands-on engineering with product planning, technical SEO, performance optimization and ownership of delivery."
     },
     "contacts": {
       "location": "Warsaw, Poland",
@@ -33,156 +34,163 @@
     ],
     "techSkills": {
       "frontend": [
-        "JavaScript (ES6+)",
         "TypeScript",
-        "React.js",
-        "Next.js 16+",
-        "Vue.js",
-        "Nuxt.js",
+        "JavaScript (ES6+)",
+        "React",
+        "Next.js / App Router",
+        "SSR / SSG",
+        "Vue.js / Nuxt.js",
         "React Native",
-        "Redux Toolkit",
-        "Zustand",
+        "Zustand / Redux Toolkit",
         "Tailwind CSS",
-        "HTML5/CSS3"
+        "HTML / CSS",
+        "next-intl",
+        "GSAP / Chart.js"
       ],
       "backend": [
         "Node.js",
-        "Nest.js",
-        "Express.js",
-        "REST API",
+        "NestJS",
+        "Express",
+        "REST APIs / WebSockets",
         "GraphQL",
-        "WebSockets",
+        "MySQL / TypeORM",
         "PostgreSQL",
         "MongoDB",
         "Redis",
-        "Prisma"
+        "Prisma",
+        "Meilisearch",
+        "SQL migrations",
+        "JWT / role-based access",
+        "Webhooks / scheduled jobs"
+      ],
+      "ai": [
+        "AI agent interfaces",
+        "Streaming chat",
+        "Workflow automation",
+        "OpenClaw",
+        "Telegram bots",
+        "CRM / payment integrations"
       ],
       "blockchain": [
-        "Web3",
-        "Ethers.js",
+        "Ethers.js / viem",
         "Wagmi",
-        "WalletConnect",
+        "WalletConnect / Reown",
         "MetaMask",
-        "Sats-Connect",
-        "Unisat"
+        "Bitcoin / PSBT",
+        "Sats Connect / UniSat"
       ],
       "tools": [
-        "Docker",
-        "GitHub",
-        "Bitbucket",
-        "Jira",
-        "Figma",
-        "Postman",
-        "Vercel",
         "Railway",
         "Cloudflare",
-        "OpenClaw",
-        "GitHub Actions",
-        "Chart.js",
-        "GSAP"
+        "Vercel",
+        "Docker",
+        "Git / GitHub Actions",
+        "Jest / node:test",
+        "Sentry",
+        "Swagger / Postman",
+        "Technical SEO",
+        "Caching / CDN",
+        "Figma / Jira / Bitbucket"
       ]
     },
     "softSkills": [
-      "Ownership Mindset",
-      "Clear Communication",
-      "Team Collaboration",
-      "Leadership & Mentoring",
-      "Product Thinking",
-      "Problem Solving",
-      "Attention to Detail",
-      "Time Management",
-      "Adaptability"
+      "End-to-end ownership",
+      "Product planning & prioritization",
+      "Technical communication",
+      "Cross-functional collaboration",
+      "Problem solving",
+      "Mentoring & code review"
     ],
     "experience": [
       {
-        "company": "Eitherway AI",
-        "position": "Senior Frontend Developer",
-        "description": "Building an AI platform that turns prompts into deployable web projects. Developed the plugin ecosystem, on-site monetization flows, multi-provider authentication with Google and Web3 wallets, and agentic mode for autonomous project execution. Implemented internal automation flows for operations and content tasks to speed up delivery.",
-        "dates": "05/2025 - Present",
-        "location": "Remote",
-        "link": "https://eitherway.ai/chat"
-      },
-      {
         "company": "Dream Watch",
-        "position": "Senior FullStack Developer & SEO Product Lead",
-        "description": "Worked as both developer and SEO product lead. Built a Swiss watches marketplace on Next.js 16+ with 20,000+ products, direct CRM integration, on-site payments, and a real-time admin panel for full content management. Organized the end-to-end delivery process: collected product and market information, planned and prioritized work, set tasks, and coordinated execution. Delivered translation flows via integrations, Railway deployment, and Cloudflare setup (DNS, SSL, caching, and security).",
+        "position": "Senior Full-Stack Developer & SEO Product Lead",
+        "description": "Delivered a multilingual marketplace for 20,000+ products with Next.js, React, NestJS and MySQL/TypeORM, including storefront and content administration.\nIntegrated Zoho CRM, payment flows and Telegram notifications; built scheduled request delivery and reconciliation workflows.\nDeveloped search and activity dashboards, Meilisearch integration, product imports and image tooling. Improved technical SEO, caching, request protection and regression checks; managed Railway deployments and Cloudflare configuration.\nOwned product research, prioritization, task planning and coordination alongside implementation.",
         "dates": "11/2025 - Present",
         "location": "Remote",
         "link": "https://dream-watch.pl/"
       },
       {
+        "company": "Eitherway AI",
+        "position": "Senior Frontend Developer",
+        "description": "Developed the frontend of an AI platform that turns prompts into deployable web projects, including agent execution interfaces and streaming chat.\nImplemented plugin and monetization flows, Google and Web3 wallet authentication, and internal automation for operations and content workflows.",
+        "dates": "05/2025 - Present",
+        "location": "Remote",
+        "link": "https://eitherway.ai/chat"
+      },
+      {
         "company": "Bridge Labs",
-        "position": "Senior FullStack Developer",
-        "description": "Building a Web3 job marketplace connecting specialists with projects, including resume-based talent search and a comprehensive vetting system. Implementing rapid matching flows and success-tracking features for hiring teams.",
+        "position": "Senior Full-Stack Developer",
+        "description": "Built a Web3 recruitment marketplace connecting specialists with projects. Implemented resume-based talent discovery, candidate vetting, matching workflows and hiring progress tracking.",
         "dates": "07/2025 - 05/2026",
         "location": "Remote",
         "link": "https://bridge-labs.io/"
       },
       {
         "company": "GiftsBattle",
-        "position": "Senior FullStack Developer",
-        "description": "Developed Telegram mini-app and website gambling platform, significantly optimizing performance and user experience. Enhanced animations, improved display rendering, and implemented comprehensive performance optimizations that dramatically increased project speed and responsiveness.",
+        "position": "Senior Full-Stack Developer",
+        "description": "Developed a Telegram mini app and companion website for a gaming platform. Optimized rendering, animations and interface responsiveness, improving performance across core user flows.",
         "dates": "04/2025 - 08/2025",
         "location": "Remote",
         "link": "https://giftsbattle.com/"
       },
       {
         "company": "Darwin Labs",
-        "position": "Senior FullStack Developer",
-        "description": "Built self-evolving AI systems that autonomously develop and improve themselves. Developed machine learning frameworks for continuous self-optimization and autonomous growth capabilities.",
+        "position": "Senior Full-Stack Developer",
+        "description": "Worked on full-stack development for AI automation products, supporting agent workflows and application integrations.",
         "dates": "03/2025 - 07/2025",
         "location": "Remote",
         "link": ""
       },
       {
-        "company": "Morphis Ai",
-        "position": "Senior FullStack Developer",
-        "description": "Built manual agent creation system with detailed configuration options, including text and voice chat interfaces. Created fine-tuned control settings for agent behavior and performance optimization.",
+        "company": "Morphis AI",
+        "position": "Senior Full-Stack Developer",
+        "description": "Built configurable AI agent creation flows with text and voice chat interfaces. Implemented controls for agent behavior and configuration.",
         "dates": "02/2025 - 05/2025",
         "location": "Remote"
       },
       {
         "company": "BlackStack Labs",
-        "position": "Senior FullStack Developer",
-        "description": "Contributed to diverse client projects at BlackStack Labs, consistently delivering high-quality and efficient solutions while optimizing code for performance and stability. Enhanced integration processes and met project goals on schedule, ensuring client satisfaction with each deployment.",
+        "position": "Senior Full-Stack Developer",
+        "description": "Delivered full-stack features and external integrations across client projects. Improved application performance, code maintainability and release stability in collaboration with product teams.",
         "dates": "07/2024 - 02/2025",
         "location": "Remote"
       },
       {
         "company": "Ordeez.io",
-        "position": "Senior FullStack Developer",
-        "description": "Acted as the sole developer in building an NFT marketplace with features like NFT migration, trading, and analytics. Developed complex UI effects and worked closely with designers to create an appealing user experience, focusing on seamless navigation and functionality.",
+        "position": "Senior Full-Stack Developer",
+        "description": "Built an NFT marketplace as the sole developer, covering migration, trading and analytics. Collaborated with designers on interactive interfaces and complex visual effects.",
         "dates": "02/2024 - 04/2025",
         "location": "Croatia, Remote",
         "link": "https://ordeez.io/"
       },
       {
         "company": "Capgemini",
-        "position": "Senior Frontend & FullStack Developer",
+        "position": "Senior Frontend & Full-Stack Developer",
         "dates": "10/2023 - 10/2024",
         "location": "Ukraine, Remote",
-        "description": "Worked across multiple roles, including Full Stack and React Native developer, supporting well-known companies in creating impactful solutions that benefit humanity. Contributed to projects such as AI-driven security tools, investment platforms, and corporate applications, adding meaningful features and maintaining high standards of performance.",
+        "description": "Worked across frontend, full-stack and React Native projects for enterprise clients, including security, investment and internal business applications. Delivered features and maintained application performance.",
         "link": "https://capgemini-engineering.com.ua/"
       },
       {
         "company": "Zoinks Hedge Crypto",
-        "position": "Front-End React, Crypto Developer",
-        "description": "Contributed to a crypto fund platform, integrating smart contracts for staking, minting, and redeeming, and creating interactive dashboards. Developed two versions of their website independently and implemented a streamlined system for managing smart contracts, making processes more accessible and efficient.",
+        "position": "Frontend Developer · React & Web3",
+        "description": "Built two versions of a crypto fund website and interactive dashboards. Integrated smart contract flows for staking, minting and redemption, with interfaces for managing contract interactions.",
         "dates": "02/2022 - 07/2023",
         "location": "Canada, Remote"
       },
       {
         "company": "Ficus Technologies",
-        "position": "Front-End Developer React",
-        "description": "Worked as part of a team on various client projects, focusing on building responsive, interactive interfaces and enhancing user engagement. Contributed innovative ideas and solutions for improved functionality and design, significantly enhancing user satisfaction.",
+        "position": "Frontend Developer · React",
+        "description": "Developed responsive React interfaces for client projects, working with a team to implement product requirements and improve usability.",
         "dates": "08/2021 - 02/2022",
         "location": "Ukraine, Remote",
         "link": "https://ficustechnologies.com/"
       },
       {
         "company": "Fortuna Finance",
-        "position": "Front-End Developer Vue",
-        "description": "Served as the lead developer, creating a staking and investment platform with Vue.js, focusing on user experience, cross-browser compatibility, and smooth interaction for crypto enthusiasts. Ensured a seamless and intuitive experience for end users.",
+        "position": "Lead Frontend Developer · Vue.js",
+        "description": "Led frontend development of a Vue.js staking and investment platform. Implemented responsive interfaces and cross-browser user flows.",
         "dates": "12/2020 - 07/2021",
         "location": "Bulgaria, Remote"
       }
@@ -190,19 +198,20 @@
     "education": [
       {
         "institution": "Lviv Cooperative College",
-        "program": "Faculty of Law"
+        "program": "Law"
       },
       {
         "institution": "Lviv University of Trade",
-        "program": "Faculty of Law"
+        "program": "Law"
       }
     ]
   },
   "uk": {
     "profile": {
-      "name": "Proton Nazar",
-      "title": "Senior FullStack JavaScript розробник (AI, Web3, E-commerce)",
-      "description": "Я Senior FullStack розробник із досвідом 5+ років у створенні продакшн вебпродуктів у напрямах AI, Web3 та e-commerce. Фокусуюся на швидкій доставці, надійній архітектурі та прозорій комунікації в розподілених командах. Люблю брати повну відповідальність за складні фічі від ідеї до релізу й перетворювати продуктові ідеї на масштабовані рішення з фокусом на користувача."
+      "name": "Назар Протон",
+      "title": "Senior Full-Stack розробник",
+      "focus": "TypeScript, React та Node.js | AI, E-commerce та Web3",
+      "description": "Full-Stack розробник із понад 5 роками досвіду створення вебпродуктів: від архітектури й API до розгортання та підтримки в продакшні. Розробляю багатомовні маркетплейси, інтерфейси AI-агентів та бізнес-інтеграції. Поєдную розробку з продуктовим плануванням, технічним SEO, оптимізацією швидкодії та відповідальністю за випуск продукту."
     },
     "contacts": {
       "location": "Варшава, Польща",
@@ -232,156 +241,163 @@
     ],
     "techSkills": {
       "frontend": [
-        "JavaScript (ES6+)",
         "TypeScript",
-        "React.js",
-        "Next.js 16+",
-        "Vue.js",
-        "Nuxt.js",
+        "JavaScript (ES6+)",
+        "React",
+        "Next.js / App Router",
+        "SSR / SSG",
+        "Vue.js / Nuxt.js",
         "React Native",
-        "Redux Toolkit",
-        "Zustand",
+        "Zustand / Redux Toolkit",
         "Tailwind CSS",
-        "HTML5/CSS3"
+        "HTML / CSS",
+        "next-intl",
+        "GSAP / Chart.js"
       ],
       "backend": [
         "Node.js",
-        "Nest.js",
-        "Express.js",
-        "REST API",
+        "NestJS",
+        "Express",
+        "REST APIs / WebSockets",
         "GraphQL",
-        "WebSockets",
+        "MySQL / TypeORM",
         "PostgreSQL",
         "MongoDB",
         "Redis",
-        "Prisma"
+        "Prisma",
+        "Meilisearch",
+        "SQL migrations",
+        "JWT / role-based access",
+        "Webhooks / scheduled jobs"
+      ],
+      "ai": [
+        "Інтерфейси AI-агентів",
+        "Потоковий чат",
+        "Автоматизація процесів",
+        "OpenClaw",
+        "Telegram-боти",
+        "Інтеграції CRM та платежів"
       ],
       "blockchain": [
-        "Web3",
-        "Ethers.js",
+        "Ethers.js / viem",
         "Wagmi",
-        "WalletConnect",
+        "WalletConnect / Reown",
         "MetaMask",
-        "Sats-Connect",
-        "Unisat"
+        "Bitcoin / PSBT",
+        "Sats Connect / UniSat"
       ],
       "tools": [
-        "Docker",
-        "GitHub",
-        "Bitbucket",
-        "Jira",
-        "Figma",
-        "Postman",
-        "Vercel",
         "Railway",
         "Cloudflare",
-        "OpenClaw",
-        "GitHub Actions",
-        "Chart.js",
-        "GSAP"
+        "Vercel",
+        "Docker",
+        "Git / GitHub Actions",
+        "Jest / node:test",
+        "Sentry",
+        "Swagger / Postman",
+        "Technical SEO",
+        "Caching / CDN",
+        "Figma / Jira / Bitbucket"
       ]
     },
     "softSkills": [
-      "Відповідальність за результат",
-      "Чітка комунікація",
-      "Командна робота",
-      "Лідерство та менторство",
-      "Продуктове мислення",
-      "Розв'язання проблем",
-      "Увага до деталей",
-      "Тайм-менеджмент",
-      "Адаптивність"
+      "Відповідальність за повний цикл",
+      "Планування продукту та пріоритетів",
+      "Технічна комунікація",
+      "Взаємодія між командами",
+      "Розв’язання проблем",
+      "Менторство та перевірка коду"
     ],
     "experience": [
       {
-        "company": "Eitherway AI",
-        "position": "Senior Frontend розробник",
-        "description": "Розробляю AI-платформу, яка перетворює промпти на готові до деплою вебпроєкти. Реалізував екосистему плагінів, монетизаційні flow з оплатою на сайті, multi-provider authentication через Google і Web3-гаманці, а також agentic mode для автономного виконання проєктів. Впровадив внутрішні автоматизації для операційних і контент-завдань, щоб прискорити delivery.",
-        "dates": "05/2025 - Дотепер",
-        "location": "Віддалено",
-        "link": "https://eitherway.ai/chat"
-      },
-      {
         "company": "Dream Watch",
-        "position": "Senior FullStack розробник та SEO Product Lead",
-        "description": "Працював як розробник і SEO Product Lead. Розробив маркетплейс швейцарських годинників на Next.js 16+ з 20 000+ товарами, прямою інтеграцією з CRM, оплатою на сайті та адмінпанеллю в реальному часі для повного керування контентом. Організовував повний цикл розробки: збирав продуктову та ринкову інформацію, планував і пріоритезував роботу, ставив задачі та координував виконання. Реалізував потоки перекладів через інтеграції, розгортання на Railway та налаштування Cloudflare (DNS, SSL, кешування, безпека).",
+        "position": "Senior Full-Stack розробник та SEO Product Lead",
+        "description": "Розробив багатомовний маркетплейс із понад 20 000 товарами на Next.js, React, NestJS і MySQL/TypeORM, включно з вітриною та керуванням контентом.\nІнтегрував Zoho CRM, платіжні сценарії та сповіщення в Telegram; реалізував відкладене передавання заявок і звіряння даних.\nСтворив панелі аналітики пошуку й активності, інтеграцію Meilisearch, імпорт товарів та інструменти обробки зображень. Удосконалив технічне SEO, кешування, захист запитів і регресійні перевірки; керував розгортанням на Railway та налаштуваннями Cloudflare.\nПаралельно з розробкою відповідав за дослідження продукту, пріоритети, планування завдань і координацію роботи.",
         "dates": "11/2025 - Дотепер",
         "location": "Віддалено",
         "link": "https://dream-watch.pl/"
       },
       {
+        "company": "Eitherway AI",
+        "position": "Senior Frontend розробник",
+        "description": "Розробляв frontend AI-платформи, що перетворює промпти на готові до розгортання вебпроєкти, включно з інтерфейсами виконання завдань агентами та потоковим чатом.\nРеалізував сценарії роботи з плагінами й монетизацією, авторизацію через Google і Web3-гаманці та внутрішні автоматизації для операційних і контентних процесів.",
+        "dates": "05/2025 - Дотепер",
+        "location": "Віддалено",
+        "link": "https://eitherway.ai/chat"
+      },
+      {
         "company": "Bridge Labs",
-        "position": "Senior FullStack розробник",
-        "description": "Розробляю Web3-маркетплейс вакансій, що поєднує спеціалістів із проєктами, включно з пошуком талантів за резюме та комплексною системою верифікації. Впроваджую швидкі процеси матчінгу та відстеження ефективності для команд найму.",
+        "position": "Senior Full-Stack розробник",
+        "description": "Розробляв Web3-платформу найму, що поєднує спеціалістів із проєктами. Реалізував пошук кандидатів за резюме, перевірку кандидатів, підбір і відстеження етапів найму.",
         "dates": "07/2025 - 05/2026",
         "location": "Віддалено",
         "link": "https://bridge-labs.io/"
       },
       {
         "company": "GiftsBattle",
-        "position": "Senior FullStack розробник",
-        "description": "Розробив Telegram мінізастосунок і вебплатформу у сфері гемблінгу, суттєво оптимізувавши продуктивність і користувацький досвід. Покращив анімації, рендеринг інтерфейсу та реалізував комплексні оптимізації, що значно підвищили швидкість і чуйність продукту.",
+        "position": "Senior Full-Stack розробник",
+        "description": "Розробляв Telegram mini app та вебсайт ігрової платформи. Оптимізував відображення, анімації та швидкодію інтерфейсу в основних користувацьких сценаріях.",
         "dates": "04/2025 - 08/2025",
         "location": "Віддалено",
         "link": "https://giftsbattle.com/"
       },
       {
         "company": "Darwin Labs",
-        "position": "Senior FullStack розробник",
-        "description": "Розробляв самооновлювані AI-системи, які автономно створюють і покращують себе. Створив ML-фреймворки для безперервної самооптимізації та автономного зростання.",
+        "position": "Senior Full-Stack розробник",
+        "description": "Працював над Full-Stack розробкою продуктів для AI-автоматизації, підтримкою сценаріїв роботи агентів та інтеграціями застосунків.",
         "dates": "03/2025 - 07/2025",
         "location": "Віддалено",
         "link": ""
       },
       {
-        "company": "Morphis Ai",
-        "position": "Senior FullStack розробник",
-        "description": "Розробив систему ручного створення агентів із детальними параметрами конфігурації, включно з текстовими й голосовими чат-інтерфейсами. Реалізував тонкі налаштування поведінки агентів і оптимізації продуктивності.",
+        "company": "Morphis AI",
+        "position": "Senior Full-Stack розробник",
+        "description": "Створив налаштовувані сценарії створення AI-агентів із текстовим і голосовим чатом. Реалізував керування поведінкою та конфігурацією агентів.",
         "dates": "02/2025 - 05/2025",
         "location": "Віддалено"
       },
       {
         "company": "BlackStack Labs",
-        "position": "Senior FullStack розробник",
-        "description": "Працював над різними клієнтськими проєктами в BlackStack Labs, стабільно постачаючи якісні та ефективні рішення з фокусом на продуктивність і надійність коду. Покращив інтеграційні процеси та виконував цілі проєктів у строки, забезпечуючи задоволеність клієнтів.",
+        "position": "Senior Full-Stack розробник",
+        "description": "Розробляв Full-Stack функціональність та зовнішні інтеграції для клієнтських проєктів. Разом із продуктовими командами покращував швидкодію, підтримуваність коду та стабільність релізів.",
         "dates": "07/2024 - 02/2025",
         "location": "Віддалено"
       },
       {
         "company": "Ordeez.io",
-        "position": "Senior FullStack розробник",
-        "description": "Як єдиний розробник створив NFT-маркетплейс з функціями міграції NFT, торгівлі й аналітики. Реалізував складні UI-ефекти та тісно співпрацював із дизайнерами, щоб забезпечити привабливий і зручний користувацький досвід.",
+        "position": "Senior Full-Stack розробник",
+        "description": "Самостійно розробив NFT-маркетплейс із міграцією, торгівлею та аналітикою. Співпрацював із дизайнерами над інтерактивними інтерфейсами й складними візуальними ефектами.",
         "dates": "02/2024 - 04/2025",
         "location": "Хорватія, Віддалено",
         "link": "https://ordeez.io/"
       },
       {
         "company": "Capgemini",
-        "position": "Senior Frontend & FullStack розробник",
+        "position": "Senior Frontend та Full-Stack розробник",
         "dates": "10/2023 - 10/2024",
         "location": "Україна, Віддалено",
-        "description": "Працював у кількох ролях, включно з Full Stack і React Native розробкою, підтримуючи відомі компанії у створенні рішень із практичним впливом. Долучався до проєктів у сфері AI-безпеки, інвестиційних платформ і корпоративних застосунків, додаючи функціонал та підтримуючи високі стандарти продуктивності.",
+        "description": "Працював над frontend, Full-Stack і React Native проєктами для корпоративних клієнтів у сферах безпеки, інвестицій та внутрішніх бізнес-застосунків. Реалізовував функціональність і підтримував швидкодію застосунків.",
         "link": "https://capgemini-engineering.com.ua/"
       },
       {
         "company": "Zoinks Hedge Crypto",
-        "position": "Front-End React, Crypto розробник",
-        "description": "Розробляв платформу криптофонду: інтегрував smart-контракти для staking, minting і redeeming, а також створював інтерактивні дашборди. Самостійно реалізував дві версії сайту та впровадив зручну систему керування smart-контрактами.",
+        "position": "Frontend-розробник · React та Web3",
+        "description": "Розробив дві версії вебсайту криптофонду та інтерактивні панелі. Інтегрував смартконтракти для стейкінгу, випуску й погашення токенів та створив інтерфейси взаємодії з контрактами.",
         "dates": "02/2022 - 07/2023",
         "location": "Канада, Віддалено"
       },
       {
         "company": "Ficus Technologies",
-        "position": "Front-End React розробник",
-        "description": "Працював у команді над різними клієнтськими проєктами, фокусуючись на адаптивних інтерактивних інтерфейсах і залученні користувачів. Пропонував і реалізовував рішення для покращення функціональності та дизайну, що підвищило задоволеність користувачів.",
+        "position": "Frontend-розробник · React",
+        "description": "Розробляв адаптивні React-інтерфейси для клієнтських проєктів. Працював у команді над реалізацією продуктових вимог і покращенням зручності використання.",
         "dates": "08/2021 - 02/2022",
         "location": "Україна, Віддалено",
         "link": "https://ficustechnologies.com/"
       },
       {
         "company": "Fortuna Finance",
-        "position": "Front-End Vue розробник",
-        "description": "Був техлідом платформи стейкінгу та інвестицій на Vue.js, з фокусом на UX, кросбраузерну сумісність і плавну взаємодію для криптоаудиторії. Забезпечив інтуїтивний і безшовний досвід для кінцевих користувачів.",
+        "position": "Провідний frontend-розробник · Vue.js",
+        "description": "Очолював frontend-розробку платформи стейкінгу та інвестицій на Vue.js. Реалізував адаптивні інтерфейси та кросбраузерні користувацькі сценарії.",
         "dates": "12/2020 - 07/2021",
         "location": "Болгарія, Віддалено"
       }
@@ -389,19 +405,20 @@
     "education": [
       {
         "institution": "Львівський кооперативний коледж",
-        "program": "Факультет права"
+        "program": "Право"
       },
       {
-        "institution": "Львівський університет торгівлі",
-        "program": "Факультет права"
+        "institution": "Львівський торговельний університет",
+        "program": "Право"
       }
     ]
   },
   "pl": {
     "profile": {
-      "name": "Proton Nazar",
-      "title": "Senior FullStack JavaScript Developer (AI, Web3, E-commerce)",
-      "description": "Jestem Senior FullStack Developerem z ponad 5-letnim doswiadczeniem w budowie produkcyjnych produktow webowych w obszarach AI, Web3 i e-commerce. Skupiam sie na szybkim delivery, niezawodnej architekturze i jasnej komunikacji w zespolach rozproszonych. Lubie brac ownership za zlozone funkcje end-to-end i zamieniac pomysly produktowe w skalowalne, user-focused rozwiazania."
+      "name": "Nazar Proton",
+      "title": "Senior Full-Stack Developer",
+      "focus": "TypeScript, React i Node.js | AI, E-commerce i Web3",
+      "description": "Programista Full-Stack z ponad 5-letnim doświadczeniem w tworzeniu produktów internetowych: od architektury i API po wdrożenie i utrzymanie. Tworzę wielojęzyczne platformy handlowe, interfejsy agentów AI oraz integracje biznesowe. Łączę pracę programistyczną z planowaniem produktu, technicznym SEO, optymalizacją wydajności i odpowiedzialnością za realizację."
     },
     "contacts": {
       "location": "Warszawa, Polska",
@@ -417,182 +434,189 @@
     },
     "languages": [
       {
-        "name": "Ukrainski",
+        "name": "Ukraiński",
         "level": "Ojczysty"
       },
       {
         "name": "Angielski",
-        "level": "Wyzej sredniozaawansowany"
+        "level": "Wyższy średniozaawansowany"
       },
       {
         "name": "Polski",
-        "level": "Sredniozaawansowany"
+        "level": "Średniozaawansowany"
       }
     ],
     "techSkills": {
       "frontend": [
-        "JavaScript (ES6+)",
         "TypeScript",
-        "React.js",
-        "Next.js 16+",
-        "Vue.js",
-        "Nuxt.js",
+        "JavaScript (ES6+)",
+        "React",
+        "Next.js / App Router",
+        "SSR / SSG",
+        "Vue.js / Nuxt.js",
         "React Native",
-        "Redux Toolkit",
-        "Zustand",
+        "Zustand / Redux Toolkit",
         "Tailwind CSS",
-        "HTML5/CSS3"
+        "HTML / CSS",
+        "next-intl",
+        "GSAP / Chart.js"
       ],
       "backend": [
         "Node.js",
-        "Nest.js",
-        "Express.js",
-        "REST API",
+        "NestJS",
+        "Express",
+        "REST APIs / WebSockets",
         "GraphQL",
-        "WebSockets",
+        "MySQL / TypeORM",
         "PostgreSQL",
         "MongoDB",
         "Redis",
-        "Prisma"
+        "Prisma",
+        "Meilisearch",
+        "SQL migrations",
+        "JWT / role-based access",
+        "Webhooks / scheduled jobs"
+      ],
+      "ai": [
+        "Interfejsy agentów AI",
+        "Czat strumieniowy",
+        "Automatyzacja procesów",
+        "OpenClaw",
+        "Boty Telegram",
+        "Integracje CRM i płatności"
       ],
       "blockchain": [
-        "Web3",
-        "Ethers.js",
+        "Ethers.js / viem",
         "Wagmi",
-        "WalletConnect",
+        "WalletConnect / Reown",
         "MetaMask",
-        "Sats-Connect",
-        "Unisat"
+        "Bitcoin / PSBT",
+        "Sats Connect / UniSat"
       ],
       "tools": [
-        "Docker",
-        "GitHub",
-        "Bitbucket",
-        "Jira",
-        "Figma",
-        "Postman",
-        "Vercel",
         "Railway",
         "Cloudflare",
-        "OpenClaw",
-        "GitHub Actions",
-        "Chart.js",
-        "GSAP"
+        "Vercel",
+        "Docker",
+        "Git / GitHub Actions",
+        "Jest / node:test",
+        "Sentry",
+        "Swagger / Postman",
+        "Technical SEO",
+        "Caching / CDN",
+        "Figma / Jira / Bitbucket"
       ]
     },
     "softSkills": [
-      "Odpowiedzialnosc za wynik",
-      "Jasna komunikacja",
-      "Wspolpraca zespolowa",
-      "Leadership i mentoring",
-      "Myslenie produktowe",
-      "Rozwiazywanie problemow",
-      "Dbalosc o szczegoly",
-      "Zarzadzanie czasem",
-      "Adaptacyjnosc"
+      "Odpowiedzialność za pełny cykl",
+      "Planowanie produktu i priorytetów",
+      "Komunikacja techniczna",
+      "Współpraca między zespołami",
+      "Rozwiązywanie problemów",
+      "Mentoring i przegląd kodu"
     ],
     "experience": [
       {
-        "company": "Eitherway AI",
-        "position": "Senior Frontend Developer",
-        "description": "Tworze platforme AI, ktora zamienia prompty w gotowe do deployu projekty webowe. Zbudowalem ekosystem pluginow, flow monetyzacji z platnosciami na stronie, multi-provider authentication przez Google i Web3 wallet oraz agentic mode do autonomicznej realizacji projektow. Wdrozylem wewnetrzne automatyzacje dla operacji i zadan contentowych, aby przyspieszyc delivery.",
-        "dates": "05/2025 - Obecnie",
-        "location": "Zdalnie",
-        "link": "https://eitherway.ai/chat"
-      },
-      {
         "company": "Dream Watch",
-        "position": "Senior FullStack Developer i SEO Product Lead",
-        "description": "Pracowalem jako developer i SEO product lead. Zbudowalem marketplace szwajcarskich zegarkow na Next.js 16+ z 20 000+ produktami, bezposrednia integracja z CRM, platnosciami na stronie i real-time panelem administracyjnym do pelnego zarzadzania trescia. Organizowalem end-to-end proces delivery: zbieralem informacje produktowe i rynkowe, planowalem i priorytetyzowalem prace, ustawialem zadania i koordynowalem wykonanie. Dostarczylem flow tlumaczen przez integracje, deployment na Railway oraz konfiguracje Cloudflare (DNS, SSL, cache i security).",
+        "position": "Senior Full-Stack Developer i SEO Product Lead",
+        "description": "Stworzyłem wielojęzyczny marketplace z ponad 20 000 produktów, oparty na Next.js, React, NestJS i MySQL/TypeORM, wraz z witryną sklepu i panelem zarządzania treścią.\nZintegrowałem Zoho CRM, płatności i powiadomienia Telegram; wdrożyłem harmonogram przekazywania zgłoszeń i uzgadnianie danych.\nZbudowałem panele analityki wyszukiwania i aktywności, integrację Meilisearch, import produktów i narzędzia do obrazów. Usprawniłem techniczne SEO, pamięć podręczną, ochronę żądań i testy regresji; zarządzałem wdrożeniami Railway i konfiguracją Cloudflare.\nOdpowiadałem również za analizę produktu, priorytetyzację, planowanie zadań i koordynację prac.",
         "dates": "11/2025 - Obecnie",
         "location": "Zdalnie",
         "link": "https://dream-watch.pl/"
       },
       {
+        "company": "Eitherway AI",
+        "position": "Senior Frontend Developer",
+        "description": "Rozwijałem frontend platformy AI przekształcającej prompty w aplikacje gotowe do wdrożenia, w tym interfejsy wykonywania zadań przez agentów i czat strumieniowy.\nWdrożyłem obsługę wtyczek i monetyzacji, uwierzytelnianie przez Google i portfele Web3 oraz automatyzacje procesów operacyjnych i treści.",
+        "dates": "05/2025 - Obecnie",
+        "location": "Zdalnie",
+        "link": "https://eitherway.ai/chat"
+      },
+      {
         "company": "Bridge Labs",
-        "position": "Senior FullStack Developer",
-        "description": "Tworze marketplace ofert pracy Web3 laczacy specjalistow z projektami, w tym wyszukiwanie talentow na podstawie resume i kompleksowy system weryfikacji. Wdrazam szybkie flow dopasowania oraz mechanizmy tracking skutecznosci dla zespolow hiringowych.",
+        "position": "Senior Full-Stack Developer",
+        "description": "Rozwijałem platformę rekrutacyjną Web3 łączącą specjalistów z projektami. Wdrożyłem wyszukiwanie talentów na podstawie CV, weryfikację kandydatów, dopasowywanie i śledzenie etapów rekrutacji.",
         "dates": "07/2025 - 05/2026",
         "location": "Zdalnie",
         "link": "https://bridge-labs.io/"
       },
       {
         "company": "GiftsBattle",
-        "position": "Senior FullStack Developer",
-        "description": "Zbudowalem Telegram mini-app i platforme webowa w obszarze gamingu, znaczaco optymalizujac wydajnosc i user experience. Usprawnilem animacje, rendering interfejsu oraz wdrozylem kompleksowe optymalizacje, ktore wyraznie zwiekszyly szybkosc i responsywnosc produktu.",
+        "position": "Senior Full-Stack Developer",
+        "description": "Rozwijałem Telegram mini app i witrynę platformy gamingowej. Optymalizowałem renderowanie, animacje i responsywność interfejsu w kluczowych ścieżkach użytkownika.",
         "dates": "04/2025 - 08/2025",
         "location": "Zdalnie",
         "link": "https://giftsbattle.com/"
       },
       {
         "company": "Darwin Labs",
-        "position": "Senior FullStack Developer",
-        "description": "Zbudowalem self-evolving systemy AI, ktore autonomicznie rozwijaja i ulepszaja same siebie. Opracowalem frameworki ML do ciaglej samooptymalizacji i autonomicznego wzrostu.",
+        "position": "Senior Full-Stack Developer",
+        "description": "Pracowałem nad rozwojem Full-Stack produktów do automatyzacji AI, obsługą procesów agentów i integracjami aplikacji.",
         "dates": "03/2025 - 07/2025",
         "location": "Zdalnie",
         "link": ""
       },
       {
-        "company": "Morphis Ai",
-        "position": "Senior FullStack Developer",
-        "description": "Zbudowalem system recznego tworzenia agentow z rozbudowana konfiguracja, w tym interfejsami czatu tekstowego i glosowego. Stworzylem precyzyjne ustawienia zachowania agentow i optymalizacji wydajnosci.",
+        "company": "Morphis AI",
+        "position": "Senior Full-Stack Developer",
+        "description": "Stworzyłem konfigurowalne procesy tworzenia agentów AI z czatem tekstowym i głosowym. Wdrożyłem ustawienia zachowania i konfiguracji agentów.",
         "dates": "02/2025 - 05/2025",
         "location": "Zdalnie"
       },
       {
         "company": "BlackStack Labs",
-        "position": "Senior FullStack Developer",
-        "description": "Pracowalem przy roznych projektach klienckich w BlackStack Labs, regularnie dostarczajac wysokiej jakosci i efektywne rozwiazania z naciskiem na wydajnosc i stabilnosc kodu. Usprawnilem procesy integracyjne i realizowalem cele projektowe na czas, dbajac o satysfakcje klientow.",
+        "position": "Senior Full-Stack Developer",
+        "description": "Dostarczałem funkcje Full-Stack i integracje zewnętrzne w projektach klientów. Wspólnie z zespołami produktowymi poprawiałem wydajność, łatwość utrzymania kodu i stabilność wydań.",
         "dates": "07/2024 - 02/2025",
         "location": "Zdalnie"
       },
       {
         "company": "Ordeez.io",
-        "position": "Senior FullStack Developer",
-        "description": "Jako jedyny developer zbudowalem marketplace NFT z funkcjami migracji NFT, handlu i analityki. Zaimplementowalem zaawansowane efekty UI i scisle wspolpracowalem z designerami, aby zapewnic atrakcyjny i wygodny user experience.",
+        "position": "Senior Full-Stack Developer",
+        "description": "Samodzielnie zbudowałem marketplace NFT z migracją, handlem i analityką. Współpracowałem z projektantami nad interaktywnymi interfejsami i złożonymi efektami wizualnymi.",
         "dates": "02/2024 - 04/2025",
         "location": "Chorwacja, Zdalnie",
         "link": "https://ordeez.io/"
       },
       {
         "company": "Capgemini",
-        "position": "Senior Frontend & FullStack Developer",
+        "position": "Senior Frontend i Full-Stack Developer",
         "dates": "10/2023 - 10/2024",
         "location": "Ukraina, Zdalnie",
-        "description": "Pracowalem w kilku rolach, w tym jako Full Stack i React Native developer, wspierajac znane firmy w tworzeniu rozwiazan o realnym wplywie. Uczestniczylem w projektach AI security, platformach inwestycyjnych i aplikacjach korporacyjnych, rozwijajac funkcjonalnosci i utrzymujac wysokie standardy wydajnosci.",
+        "description": "Pracowałem przy projektach frontend, Full-Stack i React Native dla klientów korporacyjnych, obejmujących bezpieczeństwo, inwestycje i wewnętrzne aplikacje biznesowe. Dostarczałem funkcje i dbałem o wydajność aplikacji.",
         "link": "https://capgemini-engineering.com.ua/"
       },
       {
         "company": "Zoinks Hedge Crypto",
-        "position": "Front-End React, Crypto Developer",
-        "description": "Wspoltworzylem platforme funduszu krypto: integrowalem smart kontrakty do stakingu, mintingu i redeemingu oraz budowalem interaktywne dashboardy. Samodzielnie stworzylem dwie wersje strony i wdrozylem uproszczony system zarzadzania smart kontraktami.",
+        "position": "Frontend Developer · React i Web3",
+        "description": "Zbudowałem dwie wersje strony funduszu kryptowalutowego i interaktywne panele. Zintegrowałem smart kontrakty do stakingu, emisji i umarzania tokenów oraz interfejsy obsługi kontraktów.",
         "dates": "02/2022 - 07/2023",
         "location": "Kanada, Zdalnie"
       },
       {
         "company": "Ficus Technologies",
-        "position": "Front-End Developer React",
-        "description": "Pracowalem zespolowo przy roznych projektach klienckich, koncentrujac sie na responsywnych, interaktywnych interfejsach i wiekszym zaangazowaniu uzytkownikow. Proponowalem i wdrazalem rozwiazania poprawiajace funkcjonalnosc i design, co zwiekszalo satysfakcje uzytkownikow.",
+        "position": "Frontend Developer · React",
+        "description": "Tworzyłem responsywne interfejsy React dla projektów klientów. Współpracowałem z zespołem przy realizacji wymagań produktowych i poprawie użyteczności.",
         "dates": "08/2021 - 02/2022",
         "location": "Ukraina, Zdalnie",
         "link": "https://ficustechnologies.com/"
       },
       {
         "company": "Fortuna Finance",
-        "position": "Front-End Developer Vue",
-        "description": "Pelnilem role lead developera, tworzac platforme stakingowo-inwestycyjna w Vue.js, z naciskiem na UX, kompatybilnosc miedzy przegladarkami i plynna interakcje dla odbiorcow crypto. Zapewnilem intuicyjne i bezproblemowe doswiadczenie dla uzytkownikow koncowych.",
+        "position": "Lead Frontend Developer · Vue.js",
+        "description": "Kierowałem rozwojem frontendu platformy stakingowej i inwestycyjnej w Vue.js. Wdrożyłem responsywne interfejsy i obsługę różnych przeglądarek.",
         "dates": "12/2020 - 07/2021",
         "location": "Bulgaria, Zdalnie"
       }
     ],
     "education": [
       {
-        "institution": "Lviv Cooperative College",
-        "program": "Wydzial Prawa"
+        "institution": "Lwowskie Kolegium Spółdzielcze",
+        "program": "Prawo"
       },
       {
-        "institution": "Lviv University of Trade",
-        "program": "Wydzial Prawa"
+        "institution": "Lwowski Uniwersytet Handlowy",
+        "program": "Prawo"
       }
     ]
   }

@@ -1,167 +1,93 @@
 'use client';
 
-import { useRef, useState } from 'react';
-import Description from '../components/Description';
-import ProfileInfo from '../components/ProfileInfo';
+import { useState } from 'react';
+import Image from 'next/image';
 import myPhoto from '../Assets/myPhoto.webp';
 import TechSkills from '../components/TechSkils';
 import WorkExperience from '../components/WorkExpetience';
-import Socials from '../components/Socials';
-import Contacts from '../components/Contacts';
-import Languages from '../components/Languages';
-import Education from '../components/Education';
-import SoftSkills from '../components/SoftSkills';
 import { Locale, ResumeDocumentType } from '../types';
 
-const PDF_ZOOM = 0.95;
-const PDF_PAGE_MARGIN_MM = 8;
-const PDF_CAPTURE_WIDTH = 1280;
+const LANGUAGE_NAMES = { en: 'English', uk: 'Українська', pl: 'Polski' };
 
-type Props = {
-  resumeDocument: ResumeDocumentType;
-};
-
-function ResumePage({ resumeDocument }: Props) {
+function ResumePage({ resumeDocument }: { resumeDocument: ResumeDocumentType }) {
   const [locale, setLocale] = useState<Locale>('en');
-  const resumeRef = useRef<HTMLDivElement>(null);
-  const [isDownloadingPdf, setIsDownloadingPdf] = useState(false);
-  const currentInfo = resumeDocument.content[locale] ?? resumeDocument.content.en;
-  const uiText = resumeDocument.uiText[locale] ?? resumeDocument.uiText.en;
+  const info = resumeDocument.content[locale] ?? resumeDocument.content.en;
+  const ui = resumeDocument.uiText[locale] ?? resumeDocument.uiText.en;
 
-  const handleDownloadPdf = async () => {
-    if (!resumeRef.current || isDownloadingPdf) return;
-
-    setIsDownloadingPdf(true);
-    try {
-      const [{ default: html2canvas }, { jsPDF }] = await Promise.all([
-        import('html2canvas'),
-        import('jspdf'),
-      ]);
-
-      const canvas = await html2canvas(resumeRef.current, {
-        scale: 2,
-        useCORS: true,
-        backgroundColor: '#ffffff',
-        windowWidth: PDF_CAPTURE_WIDTH,
-        onclone: (doc: Document) => {
-          const clonedResume = doc.querySelector(
-            '[data-resume-root="true"]',
-          ) as HTMLElement | null;
-          if (!clonedResume) return;
-
-          clonedResume.style.width = '1024px';
-          clonedResume.style.maxWidth = '1024px';
-          clonedResume.style.margin = '0 auto';
-          clonedResume.style.boxShadow = 'none';
-          clonedResume.style.backgroundColor = '#ffffff';
-        },
-      });
-
-      const pdf = new jsPDF({
-        unit: 'mm',
-        format: 'a2',
-        orientation: 'portrait',
-        compress: true,
-      });
-
-      const pageWidth = pdf.internal.pageSize.getWidth();
-      const pageHeight = pdf.internal.pageSize.getHeight();
-      const maxWidth = pageWidth - PDF_PAGE_MARGIN_MM * 2;
-      const maxHeight = pageHeight - PDF_PAGE_MARGIN_MM * 2;
-      const fitScale =
-        Math.min(maxWidth / canvas.width, maxHeight / canvas.height) * PDF_ZOOM;
-      const renderWidth = canvas.width * fitScale;
-      const renderHeight = canvas.height * fitScale;
-      const offsetX = (pageWidth - renderWidth) / 2;
-      const offsetY = (pageHeight - renderHeight) / 2;
-
-      pdf.addImage(
-        canvas.toDataURL('image/jpeg', 0.98),
-        'JPEG',
-        offsetX,
-        offsetY,
-        renderWidth,
-        renderHeight,
-        undefined,
-        'FAST',
-      );
-      pdf.save(`Proton-Nazar-Resume-${locale.toUpperCase()}.pdf`);
-    } finally {
-      setIsDownloadingPdf(false);
-    }
+  const selectLocale = (nextLocale: Locale) => {
+    setLocale(nextLocale);
+    document.documentElement.setAttribute('lang', nextLocale);
   };
 
   return (
-    <main className="p-0 m-0 w-full h-full flex justify-center font-play text-black">
-      <div
-        ref={resumeRef}
-        data-resume-root="true"
-        className="flex mt-10 mb-5 w-11/12 max-w-[64rem] flex-col bg-white shadow-2xl"
-      >
-        <div className="flex pc700:flex-row flex-col pb-5">
-          <div className="pc700:w-[40%] w-full flex flex-col items-center">
-            <img
-              className="pc700:rounded-full object-cover pc700:mt-10 z-10 w-11/12 aspect-square"
-              src={myPhoto.src}
-              alt="Profile"
-            />
-            <div className="w-10/12">
-              <ProfileInfo MyInfo={currentInfo} isForSmallScreen />
-              <Contacts MyInfo={currentInfo} title={uiText.contacts} />
-            </div>
-            <div className="w-10/12">
-              <Socials MyInfo={currentInfo} />
-              <Description MyInfo={currentInfo} isForSmallScreen />
-              <Languages MyInfo={currentInfo} title={uiText.languages} />
-              <SoftSkills MyInfo={currentInfo} title={uiText.softSkills} />
-              <TechSkills MyInfo={currentInfo} labels={uiText.tech} />
-              <Education MyInfo={currentInfo} title={uiText.education} />
-            </div>
+    <main className="resume-shell">
+      <div className="resume-toolbar">
+        <nav aria-label="Resume language" className="resume-languages">
+          {(['en', 'uk', 'pl'] as Locale[]).map((lang) => (
+            <button key={lang} type="button" lang={lang} aria-label={LANGUAGE_NAMES[lang]}
+              aria-pressed={locale === lang} onClick={() => selectLocale(lang)}>
+              {lang.toUpperCase()}
+            </button>
+          ))}
+        </nav>
+        <button className="resume-pdf" type="button" onClick={() => window.print()}>
+          {ui.downloadPdf}
+        </button>
+      </div>
+      <article className="resume-document" data-resume-root="true" lang={locale}>
+        <header className="resume-header">
+          <div>
+            <h1>{info.profile.name}</h1>
+            <p className="resume-title">{info.profile.title}</p>
+            {info.profile.focus ? <p className="resume-focus">{info.profile.focus}</p> : null}
+            <ul className="resume-contact-list" aria-label={ui.contacts}>
+              <li>{info.contacts.location}</li>
+              <li><a href={`mailto:${info.contacts.email}`}>{info.contacts.email}</a></li>
+              <li><a href={`tel:${info.contacts.phone.replace(/\s/g, '')}`}>{info.contacts.phone}</a></li>
+            </ul>
+            <ul className="resume-social-list">
+              {(['linkedin', 'github', 'telegram'] as const).map((social) => (
+                <li key={social}><a href={info.contacts.socials[social]}>
+                  {info.contacts.socials[social].replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')}
+                </a></li>
+              ))}
+            </ul>
           </div>
-          <div className="pc700:w-[60%] w-full flex justify-center bg-whiteInherit">
-            <div className="w-10/12 flex flex-col pc700:mt-10">
-              <ProfileInfo MyInfo={currentInfo} />
-              <div className="flex flex-col gap-2">
-                <div className="pc700:mt-5 flex flex-col">
-                  <WorkExperience
-                    MyInfo={currentInfo}
-                    labels={{
-                      title: uiText.workExperience,
-                      projectsAt: uiText.projectsAt,
-                    }}
-                  />
-                </div>
-              </div>
-            </div>
+          <Image className="resume-photo" src={myPhoto} alt={info.profile.name}
+            width={116} height={116} priority />
+        </header>
+        <p className="resume-summary">{info.profile.description}</p>
+        <div className="resume-body">
+          <div className="resume-experience">
+            <WorkExperience MyInfo={info} labels={{ title: ui.workExperience, projectsAt: ui.projectsAt }} />
           </div>
+          <aside className="resume-sidebar">
+            <TechSkills MyInfo={info} labels={ui.tech} />
+            <div className="resume-support">
+              <section>
+                <h2>{ui.languages}</h2>
+                <ul className="resume-language-list">
+                  {info.languages.map((language) => (
+                    <li key={language.name}><strong>{language.name}</strong> · {language.level}</li>
+                  ))}
+                </ul>
+              </section>
+              <section>
+                <h2>{ui.education}</h2>
+                {info.education.map((education) => (
+                  <p key={education.institution} className="resume-education">
+                    <strong>{education.institution}</strong><br />{education.program}
+                  </p>
+                ))}
+              </section>
+              <section className="resume-strengths">
+                <h2>{ui.softSkills}</h2>
+                <p>{info.softSkills.join(' · ')}</p>
+              </section>
+            </div>
+          </aside>
         </div>
-      </div>
-      <div
-        data-html2canvas-ignore="true"
-        className="fixed top-4 right-4 z-50 flex gap-1 rounded-lg bg-black/80 p-1 print:hidden"
-      >
-        {(['en', 'uk', 'pl'] as Locale[]).map((lang) => (
-          <button
-            key={lang}
-            type="button"
-            onClick={() => setLocale(lang)}
-            className={`rounded px-2 py-1 text-xs font-bold text-white transition-opacity ${
-              locale === lang ? 'bg-orange-500' : 'bg-white/20 hover:bg-white/30'
-            }`}
-          >
-            {lang.toUpperCase()}
-          </button>
-        ))}
-      </div>
-      <button
-        data-html2canvas-ignore="true"
-        type="button"
-        onClick={handleDownloadPdf}
-        disabled={isDownloadingPdf}
-        className="fixed bottom-4 right-4 z-50 rounded-lg bg-black px-4 py-2 text-sm font-bold text-white shadow-lg transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-70 print:hidden"
-      >
-        {isDownloadingPdf ? uiText.generatingPdf : uiText.downloadPdf}
-      </button>
+      </article>
     </main>
   );
 }

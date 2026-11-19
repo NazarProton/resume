@@ -11,6 +11,7 @@ export type ResumeUiText = {
     title: string;
     frontend: string;
     backend: string;
+    ai: string;
     blockchain: string;
     tools: string;
   };
@@ -23,6 +24,7 @@ export type MyInfoType = {
     name: string;
     title: string;
     description: string;
+    focus?: string;
   };
   contacts: {
     location: string;
@@ -43,6 +45,7 @@ export type MyInfoType = {
   techSkills: {
     frontend: string[];
     backend: string[];
+    ai?: string[];
     blockchain: string[];
     tools: string[];
   };

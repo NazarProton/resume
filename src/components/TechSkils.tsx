@@ -1,65 +1,24 @@
-import { MyInfoType } from '../types';
+import { MyInfoType, ResumeUiText } from '../types';
 
-const TechSkills = ({
-  MyInfo,
-  labels,
-}: {
-  MyInfo: MyInfoType;
-  labels: {
-    title: string;
-    frontend: string;
-    backend: string;
-    blockchain: string;
-    tools: string;
-  };
-}) => {
+const GROUPS = ['frontend', 'backend', 'ai', 'blockchain', 'tools'] as const;
+
+function TechSkills({ MyInfo, labels }: { MyInfo: MyInfoType; labels: ResumeUiText['tech'] }) {
   return (
-    <div className="mt-5">
-      <h3 className="text-orange-500 text-xl">{labels.title}</h3>
-      <div className="mt-2 flex flex-col gap-4">
-        <div>
-          <h4 className="font-semibold text-lg">{labels.frontend}</h4>
-          <ul className="flex flex-wrap gap-1.5">
-            {MyInfo.techSkills.frontend.map((skill, index) => (
-              <li key={index} className="whitespace-nowrap">
-                {skill}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <h4 className="font-semibold text-lg">{labels.backend}</h4>
-          <ul className="flex flex-wrap gap-1.5">
-            {MyInfo.techSkills.backend.map((skill, index) => (
-              <li key={index} className="whitespace-nowrap">
-                {skill}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <h4 className="font-semibold text-lg">{labels.blockchain}</h4>
-          <ul className="flex flex-wrap gap-1.5">
-            {MyInfo.techSkills.blockchain.map((skill, index) => (
-              <li key={index} className="whitespace-nowrap">
-                {skill}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <h4 className="font-semibold text-lg">{labels.tools}</h4>
-          <ul className="flex flex-wrap gap-1.5">
-            {MyInfo.techSkills.tools.map((skill, index) => (
-              <li key={index} className="whitespace-nowrap">
-                {skill}
-              </li>
-            ))}
-          </ul>
-        </div>
+    <section className="resume-skills">
+      <h2>{labels.title}</h2>
+      <div className="resume-skill-groups">
+        {GROUPS.map((group) => {
+          const skills = MyInfo.techSkills[group] ?? [];
+          return skills.length ? (
+            <div className="resume-skill-group" key={group}>
+              <h3>{labels[group]}</h3>
+              <p>{skills.join(' · ')}</p>
+            </div>
+          ) : null;
+        })}
       </div>
-    </div>
+    </section>
   );
-};
+}
 
 export default TechSkills;
