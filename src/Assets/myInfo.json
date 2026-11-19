@@ -4,7 +4,7 @@
       "name": "Nazar Proton",
       "title": "Senior Full-Stack Developer",
       "focus": "React Native & iOS · Telegram Mini Apps · Technical SEO · Web3",
-      "description": "Full-stack developer with 5+ years shipping web and mobile products from UI and APIs through production. Recent work includes React Native apps for iOS, Telegram Mini Apps and bots, and a multilingual commerce platform with 20,000+ products. Lead technical SEO across Dream Watch and WWT/WT products, combining product planning with hands-on delivery. Web3 experience spans NFT marketplaces, wallet authentication, smart-contract staking and token flows, plus Bitcoin PSBT. Core stack: TypeScript, React/Next.js, Node/NestJS, SQL, Railway and Cloudflare."
+      "description": "Full-stack developer with 5+ years shipping web and mobile products from UI and APIs through production. Recent work includes React Native apps for iOS, Telegram Mini Apps and bots, and a multilingual commerce platform with 40,000+ products. Lead technical SEO across Dream Watch and WWT/WT products, combining product planning with hands-on delivery. Web3 experience spans NFT marketplaces, wallet authentication, smart-contract staking and token flows, plus Bitcoin PSBT. Core stack: TypeScript, React/Next.js, Node/NestJS, SQL, Railway and Cloudflare."
     },
     "contacts": {
       "location": "Warsaw, Poland",
@@ -114,7 +114,7 @@
       {
         "company": "Dream Watch",
         "position": "Senior Full-Stack Developer & SEO Product Lead",
-        "description": "Deliver a multilingual commerce platform with 20,000+ products, building the storefront and content administration with Next.js, React, NestJS and MySQL/TypeORM.\nLead technical SEO across Dream Watch and WWT/WT products, pairing product improvements with performance, caching and request protection.\nIntegrate Zoho CRM, payment flows and Telegram notifications; build scheduled lead delivery and reconciliation, Meilisearch search, operations dashboards, product imports and image tooling.\nOwn product discovery, prioritization, delivery planning, regression checks and production operations on Railway and Cloudflare.",
+        "description": "Deliver a multilingual commerce platform with 40,000+ products, building the storefront and content administration with Next.js, React, NestJS and MySQL/TypeORM.\nLead technical SEO across Dream Watch and WWT/WT products, pairing product improvements with performance, caching and request protection.\nIntegrate Zoho CRM, payment flows and Telegram notifications; build scheduled lead delivery and reconciliation, Meilisearch search, operations dashboards, product imports and image tooling.\nOwn product discovery, prioritization, delivery planning, regression checks and production operations on Railway and Cloudflare.",
         "dates": "11/2025 - Present",
         "location": "Remote",
         "link": "https://dream-watch.pl/"
@@ -220,7 +220,7 @@
       "name": "Назар Протон",
       "title": "Senior Full-Stack розробник",
       "focus": "React Native та iOS · Telegram Mini Apps · технічне SEO · Web3",
-      "description": "Full-Stack розробник із понад 5 роками досвіду запуску веб- і мобільних продуктів — від інтерфейсу та API до продакшену. Останні проєкти охоплюють React Native-застосунки для iOS, Telegram Mini Apps і ботів, а також багатомовну e-commerce платформу з понад 20 000 товарів. Веду технічне SEO продуктів Dream Watch і WWT/WT, поєднуючи продуктове планування з розробкою. Досвід Web3: NFT-маркетплейси, авторизація через гаманці, смартконтрактні сценарії стейкінгу й операцій із токенами та Bitcoin PSBT. Основний стек: TypeScript, React/Next.js, Node/NestJS, SQL, Railway і Cloudflare."
+      "description": "Full-Stack розробник із понад 5 роками досвіду запуску веб- і мобільних продуктів — від інтерфейсу та API до продакшену. Останні проєкти охоплюють React Native-застосунки для iOS, Telegram Mini Apps і ботів, а також багатомовну e-commerce платформу з понад 40 000 товарів. Веду технічне SEO продуктів Dream Watch і WWT/WT, поєднуючи продуктове планування з розробкою. Досвід Web3: NFT-маркетплейси, авторизація через гаманці, смартконтрактні сценарії стейкінгу й операцій із токенами та Bitcoin PSBT. Основний стек: TypeScript, React/Next.js, Node/NestJS, SQL, Railway і Cloudflare."
     },
     "contacts": {
       "location": "Варшава, Польща",
@@ -330,7 +330,7 @@
       {
         "company": "Dream Watch",
         "position": "Senior Full-Stack розробник та SEO Product Lead",
-        "description": "Розвиваю багатомовну e-commerce платформу з каталогом понад 20 000 товарів: вітрина й адміністрування контенту на Next.js, React, NestJS і MySQL/TypeORM.\nВеду технічне SEO продуктів Dream Watch і WWT/WT, поєднуючи продуктові покращення зі швидкодією, кешуванням і захистом запитів.\nІнтегрую Zoho CRM, платіжні сценарії та сповіщення в Telegram; реалізую відкладене передавання й звіряння заявок, пошук на Meilisearch, операційні панелі, імпорт товарів та інструменти для зображень.\nВідповідаю за дослідження продукту, пріоритети, планування релізів, регресійні перевірки та продакшен на Railway і Cloudflare.",
+        "description": "Розвиваю багатомовну e-commerce платформу з каталогом понад 40 000 товарів: вітрина й адміністрування контенту на Next.js, React, NestJS і MySQL/TypeORM.\nВеду технічне SEO продуктів Dream Watch і WWT/WT, поєднуючи продуктові покращення зі швидкодією, кешуванням і захистом запитів.\nІнтегрую Zoho CRM, платіжні сценарії та сповіщення в Telegram; реалізую відкладене передавання й звіряння заявок, пошук на Meilisearch, операційні панелі, імпорт товарів та інструменти для зображень.\nВідповідаю за дослідження продукту, пріоритети, планування релізів, регресійні перевірки та продакшен на Railway і Cloudflare.",
         "dates": "11/2025 - Дотепер",
         "location": "Віддалено",
         "link": "https://dream-watch.pl/"
@@ -436,7 +436,7 @@
       "name": "Nazar Proton",
       "title": "Senior Full-Stack Developer",
       "focus": "React Native i iOS · Telegram Mini Apps · SEO techniczne · Web3",
-      "description": "Programista Full-Stack z ponad 5-letnim doświadczeniem w dostarczaniu produktów webowych i mobilnych — od interfejsu i API po produkcyjne wdrożenie. Ostatnie projekty obejmują aplikacje React Native na iOS, Telegram Mini Apps i boty oraz wielojęzyczną platformę e-commerce z katalogiem ponad 20 000 produktów. Prowadzę techniczne SEO produktów Dream Watch i WWT/WT, łącząc planowanie produktu z implementacją. Doświadczenie Web3 obejmuje marketplace’y NFT, uwierzytelnianie portfelami, integracje smart kontraktów dla stakingu i operacji na tokenach, a także Bitcoin PSBT. Główny stack: TypeScript, React/Next.js, Node/NestJS, SQL, Railway i Cloudflare."
+      "description": "Programista Full-Stack z ponad 5-letnim doświadczeniem w dostarczaniu produktów webowych i mobilnych — od interfejsu i API po produkcyjne wdrożenie. Ostatnie projekty obejmują aplikacje React Native na iOS, Telegram Mini Apps i boty oraz wielojęzyczną platformę e-commerce z katalogiem ponad 40 000 produktów. Prowadzę techniczne SEO produktów Dream Watch i WWT/WT, łącząc planowanie produktu z implementacją. Doświadczenie Web3 obejmuje marketplace’y NFT, uwierzytelnianie portfelami, integracje smart kontraktów dla stakingu i operacji na tokenach, a także Bitcoin PSBT. Główny stack: TypeScript, React/Next.js, Node/NestJS, SQL, Railway i Cloudflare."
     },
     "contacts": {
       "location": "Warszawa, Polska",
@@ -546,7 +546,7 @@
       {
         "company": "Dream Watch",
         "position": "Senior Full-Stack Developer i SEO Product Lead",
-        "description": "Rozwijam wielojęzyczną platformę e-commerce z katalogiem ponad 20 000 produktów: witrynę sklepu i panel zarządzania treścią w Next.js, React, NestJS i MySQL/TypeORM.\nProwadzę techniczne SEO produktów Dream Watch i WWT/WT, łącząc rozwój produktu z wydajnością, cache i ochroną żądań.\nIntegruję Zoho CRM, płatności i powiadomienia Telegram; tworzę harmonogram przekazywania i uzgadniania zgłoszeń, wyszukiwanie Meilisearch, panele operacyjne, import produktów i narzędzia do obrazów.\nOdpowiadam za analizę produktu, priorytety, planowanie wydań, testy regresji i środowisko produkcyjne na Railway i Cloudflare.",
+        "description": "Rozwijam wielojęzyczną platformę e-commerce z katalogiem ponad 40 000 produktów: witrynę sklepu i panel zarządzania treścią w Next.js, React, NestJS i MySQL/TypeORM.\nProwadzę techniczne SEO produktów Dream Watch i WWT/WT, łącząc rozwój produktu z wydajnością, cache i ochroną żądań.\nIntegruję Zoho CRM, płatności i powiadomienia Telegram; tworzę harmonogram przekazywania i uzgadniania zgłoszeń, wyszukiwanie Meilisearch, panele operacyjne, import produktów i narzędzia do obrazów.\nOdpowiadam za analizę produktu, priorytety, planowanie wydań, testy regresji i środowisko produkcyjne na Railway i Cloudflare.",
         "dates": "11/2025 - Obecnie",
         "location": "Zdalnie",
         "link": "https://dream-watch.pl/"
